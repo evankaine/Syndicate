@@ -10,7 +10,7 @@ class LegendsController < ApplicationController
 
   # GET /legends/1
   def show
-    render json: @legend, include: :tips
+    render json: @legend, include: :tip
   end
 
   # POST /legends
@@ -46,6 +46,6 @@ class LegendsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def legend_params
-      params.require(:legend).permit(:name, :legend_image_url, :passive_name, :passive_image_url, :tactical_name, :tactical_image_url, :ultimate_name, :ultimate_image_url, :text)
+      params.require(:legend).permit(:name, :legend_image_url, :passive_name, :passive_image_url, :tactical_name, :tactical_image_url, :ultimate_name, :ultimate_image_url, :lore)
     end
 end
