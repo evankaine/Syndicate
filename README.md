@@ -52,10 +52,15 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 ![imageAlt](https://i.imgur.com/TI8K1NO.png)
 ![imageAlt](https://i.imgur.com/GfApRWS.png)
 
-- Resource Show:
+- Resource Detail:
 
 ![imageAlt](https://i.imgur.com/8Gnm6Dx.png)
 ![imageAlt](https://i.imgur.com/q1tH50b.png)
+
+- Sign In:
+
+![imageAlt](https://i.imgur.com/JsY93bk.png)
+![imageAlt](https://i.imgur.com/9QTUjn6.png)
 
 - Tablet Resource Index:
 ![imageAlt]()
