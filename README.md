@@ -79,7 +79,7 @@ The Syndicate is a full stack application that allows users to browse legend cha
 
 #### Component Tree
 
-![imageAlt](https://i.imgur.com/7sNSZdh.png)
+![imageAlt](https://i.imgur.com/NxojmIl.png)
 
 
 #### Component Architecture
