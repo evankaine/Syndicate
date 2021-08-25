@@ -68,7 +68,7 @@ The Syndicate is a full stack application that allows users to browse legend cha
 ![imageAlt](https://i.imgur.com/Gi3Mk3J.png)
 ![imageAlt](https://i.imgur.com/DIIgzAH.png)
 
-- Tablet Resource Index:
+- Tablet:
 
 ![imageAlt](https://i.imgur.com/CI0FFoF.png)
 
