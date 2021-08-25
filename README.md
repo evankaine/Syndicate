@@ -67,10 +67,19 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 ![imageAlt](https://i.imgur.com/Ey0NGI4.png)
 ![imageAlt](https://i.imgur.com/mr3CY1U.png)
 
+
+- Create Post:
+
+![imageAlt](https://i.imgur.com/G7RE0eL.png)
+![imageAlt](https://i.imgur.com/UUTqQ1I.png)
+
+- Edit Post:
+
+![imageAlt](https://i.imgur.com/Gi3Mk3J.png)
+![imageAlt](https://i.imgur.com/DIIgzAH.png)
+
 - Tablet Resource Index:
 ![imageAlt]()
-
-- Mobile Resource Index
 
 #### Component Tree
 
