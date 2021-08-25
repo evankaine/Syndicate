@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Syndicate is a full stack application that allows users to browse legend characters from the game Apex Legends. Authorized users have the ability to create, update and delete tips/tricks which are associated with a selected legend on the detail page. This app utilizies Ruby on Rails and PostgreSQL on the backend, and React.js on the frontend.
+The Syndicate is a full stack application that allows users to browse legend characters from the game Apex Legends. Authorized users have the ability to create, update and delete tips/tricks which are associated with a selected legend on the detail page. This app utilizies Ruby on Rails on the backend, and React on the frontend.
 
 <br>
 
