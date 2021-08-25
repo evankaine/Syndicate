@@ -8,7 +8,6 @@ The Syndicate is a full stack application that allows users to browse legend cha
 
 ## MVP
 
-
 <br>
 
 ### Goals
@@ -20,8 +19,6 @@ The Syndicate is a full stack application that allows users to browse legend cha
 <br>
 
 ### Libraries and Dependencies
-
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -110,8 +107,6 @@ src
 ```
 
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
