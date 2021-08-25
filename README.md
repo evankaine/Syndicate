@@ -62,6 +62,11 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 ![imageAlt](https://i.imgur.com/JsY93bk.png)
 ![imageAlt](https://i.imgur.com/9QTUjn6.png)
 
+- Sign Up:
+
+![imageAlt](https://i.imgur.com/Ey0NGI4.png)
+![imageAlt](https://i.imgur.com/mr3CY1U.png)
+
 - Tablet Resource Index:
 ![imageAlt]()
 
