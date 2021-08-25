@@ -35,7 +35,7 @@ The Syndicate is a full stack application that allows users to browse legend cha
 
 - All Wireframes:
 
-![imageAlt](https://i.imgur.com/rcQa55Z.png)
+![imageAlt](https://i.imgur.com/w1E0UVH.png)
 
 - Desktop Landing:
 
