@@ -43,29 +43,23 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Wireframes
 
+- All Wireframes
 ![imageAlt](https://i.imgur.com/4RJpbWV.png)
 
-- All Wireframes
-
 - Desktop Landing
-
-![Dummy Link](url)
+![imageAlt](https://i.imgur.com/zeeyF7m.png)
 
 - Desktop Hero
-
-![Dummy Link](url)
+![imageAlt]()
 
 - Resource Index
-
-![Dummy Link](url)
+![imageAlt]()
 
 - Resource Show
-
-![Dummy Link](url)
+![imageAlt]()
 
 - Tablet Resource Index
-
-![Dummy Link](url)
+![imageAlt]()
 
 - Mobile Resource Index
 
