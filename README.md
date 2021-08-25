@@ -39,7 +39,7 @@ The Syndicate is a full stack application that allows users to browse legend cha
 
 - Desktop Landing:
 
-![imageAlt](https://i.imgur.com/kTeLqHP.png)
+![imageAlt](https://i.imgur.com/93a7HX5.png)
 ![imageAlt](https://i.imgur.com/aayttox.png)
 
 - Desktop Index:
