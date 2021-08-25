@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_25_191551) do
+ActiveRecord::Schema.define(version: 2021_08_25_223232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "legends", force: :cascade do |t|
+    t.string "name"
+    t.string "legend_image_url"
+    t.string "passive_name"
+    t.string "passive_image_url"
+    t.string "tactical_name"
+    t.string "tactical_image_url"
+    t.string "ultimate_name"
+    t.string "ultimate_image_url"
+    t.text "lore"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tips", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "legend_id", null: false
+    t.text "tip"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["legend_id"], name: "index_tips_on_legend_id"
+    t.index ["user_id"], name: "index_tips_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -23,4 +47,6 @@ ActiveRecord::Schema.define(version: 2021_08_25_191551) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "tips", "legends"
+  add_foreign_key "tips", "users"
 end
