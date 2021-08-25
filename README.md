@@ -12,11 +12,9 @@
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Create a backend using rails
+- Create full CRUD functionality for creating, updating, reading, and deleting post information
+- User authentication to limit user interaction with the post content
 
 <br>
 
@@ -26,11 +24,10 @@
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | Front-end user interaction and state management through manipulation of a virtual DOM.|
+|   React Router   | Site navigation and routing for single page applications |
+|      Rails       | Backend model-view-controller framework for Ruby|
+|      Axios       | HTTP client for the browser and node.js |
 
 <br>
 
@@ -117,9 +114,27 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Basic BE Models     |    H     |     3 hrs      |               |     TBD     |
+| BE CRUD Actions     |    H     |     2 hrs      |               |     TBD     |
+| BE Auth             |    L     |     2 hrs      |               |     TBD     |
+| Seed Data           |    H     |     2 hrs      |               |     TBD     |
+| FE Components       |    H     |     3 hrs      |               |     TBD     |
+| FE Crud             |    H     |     3 hrs      |               |     TBD     |
+| FE Routing          |    H     |     3 hrs      |               |     TBD     |
+| FE State            |    H     |     3 hrs      |               |     TBD     |
+| Home Page Layout    |    H     |     2 hrs      |               |     TBD     |
+| Detail Page Layout  |    H     |     2 hrs      |               |     TBD     |
+| Edit Page Layout    |    H     |     2 hrs      |               |     TBD     |
+| Create Page Layout  |    H     |     3 hrs      |               |     TBD     |
+| Sign In / Sign Up   |    H     |     3 hrs      |               |     TBD     |
+| Basic Css           |    H     |     3 hrs      |               |     TBD     |
+| Advanced Navbar CSS |    L     |     2 hrs      |               |     TBD     |
+| Advanced Home CSS   |    L     |     2 hrs      |               |     TBD     |
+| Advanced Detail CSS |    L     |     2 hrs      |               |     TBD     |
+| Advanced Edit CSS   |    L     |     2 hrs      |               |     TBD     |
+| Advanced Create CSS |    L     |     2 hrs      |               |     TBD     |
+| TOTAL               |          |     46hrs      |               |     TBD     |
+
 
 <br>
 
@@ -135,7 +150,6 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 ***
 
