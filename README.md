@@ -88,21 +88,21 @@ The Syndicate is a full stack application that allows users to browse legend cha
 
 src
 |__ Layout/
-      |__ Nav
+      |__ Nav/
             |__Nav.jsx
-      |__ Footer
+      |__ Footer/
             |__ Footer.jsx
-      |__ SignUp
+      |__ SignUp/
             |__ SignUp.jsx
-      |__ SignIn
+      |__ SignIn/
             |__ SingIn.jsx
 |__ components/
-      |__ Home
+      |__ Home/
             |__ Home.jsx
-      |__ Legends
+      |__ Legends/
             |__ Legends.jsx
             |__ LegendDetail.jsx
-      |__ Tips
+      |__ Tips/
             |__ Tips.jsx
             |__ CreateTip.jsx
             |__ EditTip.jsx
