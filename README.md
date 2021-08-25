@@ -79,7 +79,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 ![imageAlt](https://i.imgur.com/DIIgzAH.png)
 
 - Tablet Resource Index:
-![imageAlt]()
+![imageAlt](https://i.imgur.com/CI0FFoF.png)
 
 #### Component Tree
 
