@@ -1,4 +1,4 @@
-# Syndicate
+# The Syndicate
 
 ## Overview
 
