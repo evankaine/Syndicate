@@ -2,16 +2,11 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
 
@@ -79,29 +74,39 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 ![imageAlt](https://i.imgur.com/DIIgzAH.png)
 
 - Tablet Resource Index:
-- 
+
 ![imageAlt](https://i.imgur.com/CI0FFoF.png)
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+![imageAlt](https://i.imgur.com/61uGI0H.png)
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+|__ Layout/
+      |__ Nav
+            |__Nav.jsx
+      |__ Footer
+            |__ Footer.jsx
+      |__ SignUp
+            |__ SignUp.jsx
+      |__ SignIn
+            |__ SingIn.jsx
 |__ components/
-      |__ Header.jsx
+      |__ Home
+            |__ Home.jsx
+      |__ Legends
+            |__ Legends.jsx
+            |__ LegendDetail.jsx
+      |__ Tips
+            |__ Tips.jsx
+            |__ CreateTip.jsx
+            |__ EditTip.jsx
+            |__ DeleteTip.jsx
 |__ services/
 
 ```
@@ -115,8 +120,6 @@ src
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
