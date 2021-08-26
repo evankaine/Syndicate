@@ -1,20 +1,22 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneLegend } from '../services/legends';
+import { addTipToLegend } from '../services/tips';
+import "./LegendDetail.css"
 
 
-export default function FoodDetail(props) {
+export default function LegendDetail(props) {
   const [legend, setLegend] = useState(null);
   const [selectedLegend, setSelectedLegend] = useState('');
   const { id } = useParams();
   const { tips } = props;
 
   useEffect(() => {
-    const fetchFoodItem = async () => {
+    const fetchLegendItem = async () => {
       const legendData = await getOneLegend(id);
       setLegend(legendData);
     };
-    fetchFoodItem();
+    fetchLegendItem();
   }, [id]);
 
   const handleChange = (e) => {
@@ -22,20 +24,25 @@ export default function FoodDetail(props) {
     setSelectedLegend(value);
   };
 
-  // Our handle submit for adding the flavor to our food
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const foodItem = await addFlavorToFood(id, selectedFlavor);
-  //   setFoodItem(foodItem);
-  // };
+  // handle submit for adding the tips to the legend
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const legendItem = await addTipToLegend(id, selectedLegend);
+    setLegend(legendItem);
+  };
 
   return (
     <div>
+
       <h1>{legend?.name}</h1>
-      <img
-        src={legend?.legend_image_url}
-        alt={legend?.name}>
-      </img>
+
+      <div className="legend-detail-image">
+        <img
+          src={legend?.legend_image_url}
+          alt={legend?.name}>
+        </img>
+      </div>
+
       <p>{legend?.lore}</p>
 
       <img
@@ -56,6 +63,9 @@ export default function FoodDetail(props) {
       </img>
       <h3>{legend?.ultimate_name}</h3>
       
+      {tips.map((tips) => (
+        <h3 value={tips.id}>{tips.tip}</h3>
+      ))}
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import api from './api-config';
 
-// export const getAllTips = async () => {
-//   const resp = await api.get('/tips');
-//   return resp.data;
-// }
+export const getAllTips = async () => {
+  const resp = await api.get('/tips');
+  return resp.data;
+}
 
 export const addTipToLegend = async (legendId, tipId) => {
   const resp = await api.get(`/legends/${legendId}/tips/${tipId}`);
