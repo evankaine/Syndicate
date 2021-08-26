@@ -9,7 +9,7 @@ export default function Legends(props) {
       {legends?.map((legend) => (
         <div key={legend.id}>
           <Link to={`/legends/${legend.id}`}>
-            <p>{legend.name}</p>
+            <img src={legend.legend_image_url}></img>
           </Link>
           {/* {currentUser?.id === food.user_id && (
             <div>

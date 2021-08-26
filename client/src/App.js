@@ -2,7 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Layout from './layouts/Layout';
-import Legends from "../src/screens/Legends"
+import LegendDetail from "../src/screens/LegendDetail"
 import MainContainer from './containers/MainContainer';
 import Login from './screens/Login';
 import Register from './screens/Register';
@@ -50,8 +50,8 @@ function App() {
         <Layout currentUser={currentUser} handleLogout={handleLogout}>
           <Switch>
 
-          <Route path='/legends'>
-            <Legends />
+          <Route path='/legends/:id'>
+            <LegendDetail />
             </Route>
             
           <Route path='/register'>
@@ -61,11 +61,11 @@ function App() {
           <Route path='/login'>
             <Login handleLogin={handleLogin} />
           </Route>
-
+      {currentUser && (
           <Route path='/'>
             <MainContainer />
           </Route>
-
+          )}
           </Switch>
         </Layout>
       </div>

@@ -24,8 +24,7 @@ export default function Layout(props) {
       
       {currentUser && (
         <div>
-          <Link to='/foods'>Foods</Link>
-          <Link to='/flavors'>Flavors</Link>
+          
         </div>
       )}
       {props.children}

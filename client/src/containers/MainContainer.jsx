@@ -20,16 +20,14 @@ export default function MainContainer(props) {
 
   return (
     <div>
-      <Switch>
-        {/* <Route path='/legends/:id'>
-          <FoodDetail legends={legends} />
-        </Route> */}
-        <Route path='/legends'>
-          <Legends
-            legends={legends}
-          />
-        </Route>
-      </Switch>
+        <Switch>
+          <Route path='/'>
+            <Legends
+              legends={legends}
+            />
+          </Route>
+        </Switch>
     </div>
   );
 }
+
