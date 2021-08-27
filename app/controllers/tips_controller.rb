@@ -1,6 +1,6 @@
 class TipsController < ApplicationController
-  before_action :set_tip, only: [:show, :update, :destroy]
-  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :set_tip, only: [:show :create :update :destroy]
+  before_action :authorize_request, only: [:create :update :destroy]
   # GET /tips
   def index
     @tips = Tip.all
