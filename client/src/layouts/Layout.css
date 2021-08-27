@@ -1,25 +1,32 @@
 .layout-container {
 color: white;
 display: grid;
+/* grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px; */
+}
+
+.logged-out-container {
+  display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
-text-align: center;
 }
 
 .logged-out {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1 / 2 / 2 / 3; 
   text-align: center;
   margin-top: 20px;
   font-family: 'Zen Dots', cursive;
   letter-spacing: 2px;
   font-size: 40px;
+  
 }
 
 .apex-logo {
   height: 400px;
-
 }
 
 .logo-out {
@@ -54,4 +61,40 @@ text-align: center;
 }
 
 
+/* FOR LOGGED IN */
+
+.logged-in {
+  margin-top: 20px;
+  font-family: 'Zen Dots', cursive;
+  letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.logo-container {
+  text-align: left;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.logo-in {
+  font-size: 25px;
+  padding: 5px 5px 5px 20px;
+  margin: auto;
+}
+
+.account-container {
+  grid-area: 1 / 3 / 2 / 4;
+  text-align: right;
+}
+
+.username {
+  margin: auto;
+}
+
+.logout-button {
+  
+}
 

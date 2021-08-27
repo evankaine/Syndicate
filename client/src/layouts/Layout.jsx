@@ -6,16 +6,19 @@ export default function Layout(props) {
   return (
     <div className="layout-container">
       {currentUser ? (
-        <div>
-          <h1 className="logo-in">The Syndicate</h1>
-          
-          <p className="username">{currentUser.username}</p>
-          <button className="logout-button" onClick={handleLogout}>Logout</button>
+        <div className="logged-in">
+          <div className="logo-container">
+            <h1 className="logo-in">THE SYNDICATE</h1>
+          </div>
+          <div className="account-container">
+            <p className="username">Signed In As: {currentUser.username}</p>
+            <button className="logout-button" onClick={handleLogout}>Logout</button>
+          </div>
         </div>
       ) : (
           
-          <div className="logged-out">
-            
+          <div className="logged-out-container">
+            <div className="logged-out">
             <h1 className="logo-out">THE SYNDICATE</h1>
             <p className="desc-out">LEGEND INFORMATION AND GAME TIPS</p>
 
@@ -26,7 +29,8 @@ export default function Layout(props) {
               <Link className="link-login" to='/login'>LOGIN</Link>
               <img className="apex-logo"
                 src="https://cdn.freebiesupply.com/images/large/2x/apex-legends-symbol-white.png">
-            </img>
+                </img>
+                </div>
             </div>
 
             
