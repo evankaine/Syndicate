@@ -1,16 +1,64 @@
-.landing-page {
+.layout-container {
 color: white;
 display: grid;
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.logo {
-  grid-area: 1 / 1 / 2 / 2;
+.logged-out {
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Zen Dots', cursive;
+  letter-spacing: 2px;
+  font-size: 30px;
 }
 
-a.login-link {
-  grid-area: 1 / 4 / 2 / 5;
+.logo-out {
+  margin: 0;
+}
+
+.desc-out {
+  color: #A29FA4;
+  margin: 0;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.link-out {
+  padding-top: 10px;
+}
+
+.link-login:link {
+  color: white;
+  text-decoration: none;
+  padding-right: 10px;
+}
+.link-login:visited {
+  color: white;
+  text-decoration: none;
+}
+.link-login:hover {
+  color: #b8323b;
+}
+.link-login:active {
+  color: white;
+}
+
+.link-register:link {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+.link-register:visited {
+  color: white;
+  text-decoration: none;
+}
+.link-register:hover {
+  color: #b8323b;
+}
+.link-register:active {
+  color: white;
 }

@@ -1,6 +1,6 @@
 class TipsController < ApplicationController
-  before_action :set_tip, only: [:show :create :update :destroy]
-  before_action :authorize_request, only: [:create :update :destroy]
+  before_action :set_tip, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
   # GET /tips
   def index
     @tips = Tip.all
@@ -23,7 +23,9 @@ class TipsController < ApplicationController
 
   # POST /tips
   def create
+    @legend = Legend.find(params[:legend_id])
     @tip = Tip.new(tip_params)
+    @tip.legend = @legend
     @tip.user = @current_user
     if @tip.save
       render json: @tip, status: :created, location: @tip

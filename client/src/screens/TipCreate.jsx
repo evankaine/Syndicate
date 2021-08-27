@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useParams } from "react-router-dom"
 
 export default function TipCreate(props) {
   const [formData, setFormData] = useState({
@@ -6,6 +7,7 @@ export default function TipCreate(props) {
   });
   const { tip } = formData;
   const { handleCreate, legends, currentUser } = props;
+  const { id } = useParams()
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +21,7 @@ console.log(formData)
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleCreate(formData);
+        handleCreate(formData, id);
       }}
     >
       <h3>Create Tip</h3>

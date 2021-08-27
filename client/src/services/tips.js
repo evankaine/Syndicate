@@ -10,8 +10,8 @@ export const addTipToLegend = async (legendId, tipId) => {
   return resp.data;
 }
 
-export const postTip = async (tipData, legendId, tipId) => {
-  const resp = await api.post(`/legends/${legendId}/tips/${tipId}`, { tip: tipData });
+export const postTip = async (tipData, legendId) => {
+  const resp = await api.post(`/legends/${legendId}/tips`, { tip: tipData });
   return resp.data;
 };
 

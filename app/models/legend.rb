@@ -1,3 +1,3 @@
 class Legend < ApplicationRecord
-  has_many :tip
+  has_many :tips
 end

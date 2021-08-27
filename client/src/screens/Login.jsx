@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import "./Login.css"
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -17,35 +18,36 @@ export default function Login(props) {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleLogin(formData);
-      }}
-    >
-      <h3>Login</h3>
-      <label>
-        Username:
-        <input
-          type='text'
-          name='username'
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input
-          type='password'
-          name='password'
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <Link to='/register'>Register</Link>
-      <button>Submit</button>
-    </form>
+    <div className="wrapper">
+      <div className="form">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleLogin(formData);
+          }}>
+        <div className="title">
+          <h3>Login</h3>
+        </div>
+        <div className="input-wrap">
+          <input
+            type='text'
+            name='username'
+            value={formData.username}
+            onChange={handleChange}
+          />
+              
+          <input
+            type='password'
+            name='password'
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </div>
+          <br />
+          <Link to='/register'>Register</Link>
+          <button className="raise" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
   );
 }

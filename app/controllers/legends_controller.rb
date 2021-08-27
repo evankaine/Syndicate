@@ -10,7 +10,7 @@ class LegendsController < ApplicationController
 
   # GET /legends/1
   def show
-    render json: @legend, include: :tip
+    render json: @legend, include: {tips:{include: {user: {only: :username}}}}
   end
 
   # POST /legends

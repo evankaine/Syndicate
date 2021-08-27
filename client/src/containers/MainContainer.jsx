@@ -30,7 +30,7 @@ export default function MainContainer(props) {
   }, []);
 
   const handleCreate = async (formData, legendId) => {
-    const tipData = await postTip(formData);
+    const tipData = await postTip(formData, legendId);
     setTips((prevState) => [...prevState, tipData]);
     addTipToLegend(legendId, tipData.id)
   };

@@ -63,8 +63,11 @@ export default function LegendDetail(props) {
       </img>
       <h3>{legend?.ultimate_name}</h3>
       
-      {tips.map((tips) => (
-        <h3 value={tips.id}>{tips.tip}</h3>
+      {legend?.tips.map((content) => (
+        <div key={content.id}>
+          <h3>{content.user.username}</h3>
+          <p>{content.tip}</p>
+        </div>
       ))}
     </div>
   );
