@@ -44,16 +44,15 @@ export default function Login(props) {
           />
         </div>
           
-          <button className="raise" type="submit">Login</button>
+          <button className="raise" type="submit">LOGIN</button>
         </form>
         <p className="linkWrap">
-          Don't have an account? Join the Syndicate 
+          Don't have an account? Join The Syndicate 
           <Link to="/register"
             className="signUpLink">
             Here
           </Link>
         </p>
-        
       </div>
     </div>
   );

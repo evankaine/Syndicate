@@ -18,10 +18,18 @@ export default function Layout(props) {
             
             <h1 className="logo-out">THE SYNDICATE</h1>
             <p className="desc-out">LEGEND INFORMATION AND GAME TIPS</p>
-              <div className="link-out">
-                <Link className="link-login" to='/login'>Login</Link>
-                <Link className="link-register" to='/register'>Sign Up</Link>
+
+            <div className="link-out">
+            <img className="apex-logo"
+                src="https://cdn.freebiesupply.com/images/large/2x/apex-legends-symbol-white.png">
+            </img>
+              <Link className="link-login" to='/login'>LOGIN</Link>
+              <img className="apex-logo"
+                src="https://cdn.freebiesupply.com/images/large/2x/apex-legends-symbol-white.png">
+            </img>
             </div>
+
+            
         </div>
 
       )}

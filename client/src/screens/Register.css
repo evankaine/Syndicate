@@ -1,0 +1,9 @@
+.register {
+  margin: 10px;
+  letter-spacing: 3px;
+  font-size: 45px;
+  background: -webkit-linear-gradient(#b8323b 10px, #050d18);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}

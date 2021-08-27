@@ -38,34 +38,20 @@ text-align: center;
 }
 
 .link-login:link {
-  color: white;
+  color: #882831;
   text-decoration: none;
-  padding-right: 10px;
+  
 }
 .link-login:visited {
-  color: white;
+  color: #882831;
   text-decoration: none;
 }
 .link-login:hover {
-  color: #b8323b;
+  color: white;
 }
 .link-login:active {
-  color: white;
+  color: #882831;
 }
 
-.link-register:link {
-  color: white;
-  text-decoration: none;
-  padding-left: 10px;
-}
-.link-register:visited {
-  color: white;
-  text-decoration: none;
-}
-.link-register:hover {
-  color: #b8323b;
-}
-.link-register:active {
-  color: white;
-}
+
 

@@ -1,5 +1,5 @@
 .wrapper{
-  margin-top: 50px;
+  margin-top: 20px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
   background: white;
   padding: 35px 50px;
   border-radius: 5px;
-  background: linear-gradient(transparent 35px, white );
+  background: linear-gradient(transparent 40px, white );
 }
 
 .form .title {
@@ -21,11 +21,20 @@
   font-size: 50px;
   font-family: 'Zen Dots', cursive;
   letter-spacing: 2px;
-  color: #b8323b;
+  color: #882831;
+}
+
+.apex-logo {
+  height: 40px;
 }
 
 .login {
   margin: 10px;
+  letter-spacing: 10px;
+  background: -webkit-linear-gradient(#b8323b 10px, #050d18);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .form .input-wrap{
@@ -57,14 +66,14 @@ input {
 }
 
 .form .input-wrap input:focus{
-  border-color: #b8323b;
+  border-color: #882831;
 }
 
 .raise{
   text-transform: uppercase;
   letter-spacing: 3px;
   color: white;
-  background-color: #b8323b;
+  background-color: #882831;
   padding: 15px;
   width: 100%;
   border: 1px solid transparent;
@@ -82,15 +91,17 @@ transform: translateY(-0.5em);
 
 .linkWrap {
   margin: 20px 0px 0px 0px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .signUpLink:link {
   padding-left: 4px;
-  color: #b8323b;
+  color: #882831;
 }
 
 .signUpLink:visited {
-  color: #b8323b;
+  color: #882831;
 }
 
 .signUpLink:hover {
