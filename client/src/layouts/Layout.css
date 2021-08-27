@@ -5,6 +5,7 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+text-align: center;
 }
 
 .logged-out {
@@ -13,7 +14,12 @@ grid-row-gap: 0px;
   margin-top: 20px;
   font-family: 'Zen Dots', cursive;
   letter-spacing: 2px;
-  font-size: 30px;
+  font-size: 40px;
+}
+
+.apex-logo {
+  height: 400px;
+
 }
 
 .logo-out {
@@ -23,12 +29,12 @@ grid-row-gap: 0px;
 .desc-out {
   color: #A29FA4;
   margin: 0;
-  font-size: 12px;
-  padding-top: 10px;
+  font-size: 15px;
+  padding-top: 8px;
 }
 
 .link-out {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .link-login:link {
@@ -62,3 +68,4 @@ grid-row-gap: 0px;
 .link-register:active {
   color: white;
 }
+

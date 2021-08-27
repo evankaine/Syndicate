@@ -1,41 +1,49 @@
 .wrapper{
+  margin-top: 100px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  
 }
 
 .form{
-  width: 425px;
-  height: auto;
-  background: #fff;
+  width: 350px;
+  height: 350px;
+  background: white;
   padding: 35px 50px;
-  border-radius: 2px;
-  box-shadow: 0 2px 10px rgb(57, 55, 55);
+  border-radius: 5px;
+  background: linear-gradient(transparent 35px, white );
 }
 
-.form .title{
+.form .title {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin: 0px;
+  font-size: 50px;
+  font-family: 'Zen Dots', cursive;
+  letter-spacing: 2px;
+  color: #b8323b;
+}
+
+.login {
+  margin: 10px;
 }
 
 .form .input-wrap{
   margin-bottom: 20px;
-  width: 325px;
+  width: 298px;
   position: relative;
 }
 
 input {
   margin: 10px 0px 0px 0px;
+  width: 100%;
 }
 
-.form .input_wrap:last-child{
+.form .input-wrap:last-child{
   margin-bottom: 0;
 }
 
-.form .input_wrap input{
+.form .input-wrap input{
   padding: 15px;
   width: 100%;
   border: 1px solid transparent;
@@ -43,20 +51,20 @@ input {
   border-radius: 3px;
 }
 
-.form .input_wrap input{
+.form .input-wrap input{
   background: whitesmoke;
   padding-right: 35px;
 }
 
-.form .input_wrap input:focus{
-  border-color: #f4b661;
+.form .input-wrap input:focus{
+  border-color: #b8323b;
 }
 
 .raise{
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: black;
-  background-color: #f4b661;
+  color: white;
+  background-color: #b8323b;
   padding: 15px;
   width: 100%;
   border: 1px solid transparent;
@@ -70,4 +78,21 @@ input {
 box-shadow: 0 5px 10px rgb(135, 130, 130);
 transition: box-shadow 0.3s ease-in-out;
 transform: translateY(-0.5em);
+}
+
+.linkWrap {
+  margin: 20px 0px 0px 0px;
+}
+
+.signUpLink:link {
+  padding-left: 4px;
+  color: #b8323b;
+}
+
+.signUpLink:visited {
+  color: #b8323b;
+}
+
+.signUpLink:hover {
+  color: black;
 }

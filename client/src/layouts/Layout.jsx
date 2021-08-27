@@ -14,13 +14,14 @@ export default function Layout(props) {
         </div>
       ) : (
           
-        <div className="logged-out">
+          <div className="logged-out">
+            
             <h1 className="logo-out">THE SYNDICATE</h1>
             <p className="desc-out">LEGEND INFORMATION AND GAME TIPS</p>
               <div className="link-out">
                 <Link className="link-login" to='/login'>Login</Link>
                 <Link className="link-register" to='/register'>Sign Up</Link>
-              </div>
+            </div>
         </div>
 
       )}
