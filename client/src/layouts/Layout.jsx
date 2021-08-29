@@ -8,11 +8,13 @@ export default function Layout(props) {
       {currentUser ? (
         <div className="logged-in">
           <div className="logo-container">
+          <Link className="logo-link" to="/">
             <h1 className="logo-in">THE SYNDICATE</h1>
+          </Link>
           </div>
           <div className="account-container">
-            <p className="username">Signed In As: {currentUser.username}</p>
-            <button className="logout-button" onClick={handleLogout}>Logout</button>
+            <p className="username">SIGNED IN AS: <span>{currentUser.username}</span></p>
+            <button className="logout-button" onClick={handleLogout}>LOGOUT</button>
           </div>
         </div>
       ) : (

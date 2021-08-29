@@ -81,9 +81,31 @@
 }
 
 .logo-in {
-  font-size: 25px;
+  font-size: 40px;
   padding: 15px 5px 5px 15px;
   margin: auto;
+  color: white;
+}
+
+.logo-link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #c7353b, #c7353b 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.logo-link:hover {
+  background-position: 0 100%;
 }
 
 .account-container {
@@ -92,12 +114,34 @@
 }
 
 .username {
+  font-size: 15px;
   margin: auto;
   padding: 15px 15px 5px 5px;
 }
+span {
+  color: #c7353b;
+}
 
 .logout-button {
-  padding: 15px 15px 5px 5px;
+  font-family: "Agency FB"; 
+  margin-right: 15px; 
+  padding: 3px 10px 5px 10px;
+  color: white;
+  display:inline-block;
+  border-radius:0.15em;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+   text-align:center;
+   position:relative;
+  background-color: #c7353b;
+}
 
+.logout-button:active {
+  top: 0.8em;
+}
+
+.logout-button:hover {
+  color: #c7353b;
+  background:white;
+  cursor:  pointer;
 }
 

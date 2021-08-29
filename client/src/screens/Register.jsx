@@ -55,7 +55,7 @@ export default function Register(props) {
         />
       </div>
           
-      <button className="raise" type="submit">REGISTER</button>
+      <button className="raise" type="submit">SUBMIT</button>
         </form>
         <p className="linkWrap">
           Already have an account? Log In 
