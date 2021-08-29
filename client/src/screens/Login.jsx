@@ -18,6 +18,7 @@ export default function Login(props) {
   };
 
   return (
+    <div className="background">
     <div className="wrapper">
       <div className="form">
         <div className="title">
@@ -44,16 +45,17 @@ export default function Login(props) {
           />
         </div>
           
-          <button className="raise" type="submit">LOGIN</button>
+          <button className="raise" type="submit">submit</button>
         </form>
         <p className="linkWrap">
-          Don't have an account? Join The Syndicate 
+          Don't have an account? 
           <Link to="/register"
             className="signUpLink">
-            Here
+            Join The Syndicate
           </Link>
         </p>
       </div>
+    </div>
     </div>
   );
 }

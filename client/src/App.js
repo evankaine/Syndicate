@@ -2,7 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Layout from './layouts/Layout';
-
+import Landing from './layouts/Landing';
 import MainContainer from './containers/MainContainer';
 import Login from './screens/Login';
 import Register from './screens/Register';
@@ -41,7 +41,7 @@ function App() {
     setCurrentUser(null);
     localStorage.removeItem('authToken');
     removeToken();
-    history.push('/');
+    history.push('/login');
   };
 
 
@@ -58,13 +58,14 @@ function App() {
           <Route path='/login'>
             <Login handleLogin={handleLogin} />
           </Route>
+
       {currentUser && (
           <Route path='/'>
             <MainContainer />
           </Route>
           )}
           </Switch>
-        
+          
       </div>
     );
 }

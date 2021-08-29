@@ -1,10 +1,88 @@
+.legend {
+  position: relative;
+}
+
+.legend:hover .overlay {
+  opacity: 1;
+}
+
 .legend-image {
   height: 350px;
-  animation-name: floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  display: block;
+  transition: all .2s ease-in;
+  transition: all .5s ease-out;
 }
+.legend-image:hover {
+  transform: scale(1.1);
+  opacity: .7;
+  transition:opacity .5s;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.legend-name {
+  font-family: "Agency FB"; 
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.legend-name:hover {
+  opacity: 1;
+}
+
+.legend-title {
+  color: white;
+  padding: 125px 0px 0px 0px;
+  text-align: center;
+  font-family: "Agency FB"; 
+  font-size: 80px;
+}
+
+hr {
+  border: 0;
+  display:block; 
+  width: 75%;          
+  background-color:#c7353b;
+  height: 2px;
+  margin: auto;  
+  margin-top: 10px;
+}
+
+.legends-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-direction: row;
+  margin: 0px 50px 0px 50px;
+  padding: 0px 25px 150px 25px;
+}
+
+.legends {
+  margin: 5px;
+}
+
+
+.background-legends {
+  background-image: url('https://i.imgur.com/boJotd2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+}
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);

@@ -19,6 +19,7 @@ export default function Register(props) {
   };
 
   return (
+    <div className="background">
     <div className="wrapper">
       <div className="form">
         <div className="title">
@@ -65,5 +66,6 @@ export default function Register(props) {
         </p>
       </div>
     </div>
+  </div>
   );
 }

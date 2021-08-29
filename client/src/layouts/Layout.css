@@ -1,25 +1,20 @@
 .layout-container {
-color: white;
-display: grid;
-/* grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px; */
+  background-color: transparent;
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  width: 100%;
+  color: white;
 }
 
 .logged-out-container {
-  display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  text-align: center;
 }
 
 .logged-out {
-  grid-area: 1 / 2 / 2 / 3; 
   text-align: center;
-  margin-top: 20px;
-  font-family: 'Zen Dots', cursive;
+  margin-top: 10px;
+  font-family: "Agency FB"; 
   letter-spacing: 2px;
   font-size: 40px;
   
@@ -30,13 +25,14 @@ grid-row-gap: 0px;
 }
 
 .logo-out {
+  text-align: center;
   margin: 0;
 }
 
 .desc-out {
   color: #A29FA4;
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 8px;
 }
 
@@ -63,15 +59,20 @@ grid-row-gap: 0px;
 
 /* FOR LOGGED IN */
 
+
 .logged-in {
-  margin-top: 20px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Agency FB";  
   letter-spacing: 2px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: linear-gradient(#061123, black );
+  -webkit-box-shadow: 20px 20px 20px black;
+    -moz-box-shadow:    20px 20px 20px black;
+    box-shadow:         20px 20px 20px black;
+  height: 65px;
 }
 
 .logo-container {
@@ -81,7 +82,7 @@ grid-row-gap: 0px;
 
 .logo-in {
   font-size: 25px;
-  padding: 5px 5px 5px 20px;
+  padding: 15px 5px 5px 15px;
   margin: auto;
 }
 
@@ -92,9 +93,11 @@ grid-row-gap: 0px;
 
 .username {
   margin: auto;
+  padding: 15px 15px 5px 5px;
 }
 
 .logout-button {
-  
+  padding: 15px 15px 5px 5px;
+
 }
 

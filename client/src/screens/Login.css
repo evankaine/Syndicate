@@ -1,5 +1,5 @@
 .wrapper{
-  margin-top: 20px;
+  margin-top: 0px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,16 +12,17 @@
   background: white;
   padding: 35px 50px;
   border-radius: 5px;
-  background: linear-gradient(transparent 40px, white );
+  background-color: white;
+  margin-top: 250px;
 }
 
 .form .title {
   text-align: center;
   margin: 0px;
   font-size: 50px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Agency FB"; 
   letter-spacing: 2px;
-  color: #882831;
+  color: #c7353b;
 }
 
 .apex-logo {
@@ -30,11 +31,6 @@
 
 .login {
   margin: 10px;
-  letter-spacing: 10px;
-  background: -webkit-linear-gradient(#b8323b 10px, #050d18);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
 }
 
 .form .input-wrap{
@@ -61,19 +57,20 @@ input {
 }
 
 .form .input-wrap input{
-  background: whitesmoke;
+  background: white;
   padding-right: 35px;
 }
 
 .form .input-wrap input:focus{
-  border-color: #882831;
+  border-color: #c7353b;
 }
 
 .raise{
+  font-family: "Agency FB"; 
   text-transform: uppercase;
   letter-spacing: 3px;
   color: white;
-  background-color: #882831;
+  background-color: #c7353b;
   padding: 15px;
   width: 100%;
   border: 1px solid transparent;
@@ -91,19 +88,30 @@ transform: translateY(-0.5em);
 
 .linkWrap {
   margin: 20px 0px 0px 0px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
+  font-family: "Agency FB"; 
+  
 }
 
 .signUpLink:link {
   padding-left: 4px;
-  color: #882831;
+  color: #c7353b;
 }
 
 .signUpLink:visited {
-  color: #882831;
+  color: #c7353b;
 }
 
 .signUpLink:hover {
   color: black;
+}
+
+.background {
+  /* background-image: url('https://i.imgur.com/XX00X05.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center; */
+  background-color: black
 }

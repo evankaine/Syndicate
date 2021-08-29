@@ -63,9 +63,9 @@ export default function MainContainer(props) {
         </Route>
         
         <Route path='/'>
-          <Legends legends={legends}/>
+          <Legends legends={legends} />
         </Route>
-        
+
       </Switch>
     </div>
   );
