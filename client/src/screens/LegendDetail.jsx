@@ -37,12 +37,12 @@ export default function LegendDetail(props) {
     <div className="background-legends">
     <div className="legend-detail">
 
-    <div className="legend-detail-image">
-      <img
+    <div className="detail-image">
+      <img className="image"
         src={legend?.legend_image_url}
         alt={legend?.name}>
       </img>
-      </div>
+    </div>
       
     <div className="detail">
       <h1 className="detail-name">{legend?.name}</h1>

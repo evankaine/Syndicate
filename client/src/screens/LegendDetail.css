@@ -1,29 +1,35 @@
 
-/* 
-.layyout-children {
-  flex: 2 1;
-  padding: 100px;
-} */
-
-
 
 .legend-detail {
-  flex: 2 1;
-  padding: 100px;
-  display: flex;
-  padding: 80px 100px 100px;
+  padding: 80px 25px 25px 50px;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 50px;
 }
 
-.legend-detail-image {
-  width: 500px;
-    padding: 0 40px;
+.detail-image {
+  display: block;
+  padding: 0 20px;
+  grid-area: 1 / 1 / 2 / 2;
 }
+
+.image {
+  height: 400px;
+  
+}
+
 
 .detail {
-  display: flex;
-  flex-direction: column;
+  
   line-height: 1.6;
+  color: white;
 }
 
 .detail-name {
@@ -39,6 +45,7 @@
   letter-spacing: .9px;
   display: block;
   line-height: 1.6;
+  width: 800px;
 }
 
 .ability-images {
@@ -48,17 +55,7 @@
 }
 
 .tip-container {
-  max-width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
-  border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    -webkit-font-smoothing: antialiased;
+
 }
 
 .tip-list {
