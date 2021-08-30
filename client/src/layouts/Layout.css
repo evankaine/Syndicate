@@ -164,28 +164,40 @@ span {
 
 @media (max-width: 400px) {
   
-  .logged-out {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  .logged-out, .logged-in {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     height: 55px;
   }
-  .logo-out {
+  .logo-out, .logo-in {
     font-size: 20px;
     padding: 15px 5px 5px 10px;
     margin: auto;
     color: white;
   }
+  .logo-container {
+    grid-area: 1 / 1 / 2 / 2; 
+  }
 
+  .button-container, .account-container {
+    grid-area: 1 / 2 / 2 / 3;;
+  }
   .login-button, .register-button {
     font-family: "Agency FB"; 
     font-size: 12px;
-    margin: 3px; 
+    margin: 15px 5px 0px 0px; 
     padding: 2px 10px 5px 10px;
   }
   .login-button {
     padding: 2px 22px 5px 22px;
+  }
+
+  .username {
+    font-size: 15px;
+    margin: auto;
+    padding: 5px 5px 5px 5px;
   }
 }

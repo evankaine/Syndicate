@@ -53,7 +53,7 @@ export default function LegendDetail(props) {
 
     <div className="ability-images">
       <div >
-        <h3>PASSIVE</h3>
+        <h3 className="h3-media">PASSIVE</h3>
         <img className="passive"
           src={legend?.passive_image_url}
           alt={legend?.passive_image_url}>
@@ -63,17 +63,17 @@ export default function LegendDetail(props) {
       </div>
             
       <div >
-        <h3>TACTICAL</h3>
+        <h3 className="h3-media">TACTICAL</h3>
         <img className="tactical"
           src={legend?.tactical_image_url}
           alt={legend?.tactical_image_url}>
         </img>
         <hr />
-        <h3>{legend?.tactical_name}</h3>
+        <h3 >{legend?.tactical_name}</h3>
       </div>
 
       <div >
-        <h3>ULTIMATE</h3>
+        <h3 className="h3-media">ULTIMATE</h3>
         <img className="ultimate"
           src={legend?.ultimate_image_url}
           alt={legend?.ultimate_image_url}>
@@ -82,7 +82,7 @@ export default function LegendDetail(props) {
         <h3>{legend?.ultimate_name}</h3>
       </div>
     </div>
-    <hr />
+    <hr className="hr-media" />
           <div className="tip-container">
             <h3 className="forum-title">FORUM</h3>
             <p className="forum-legend">{legend?.name}</p>
