@@ -1,5 +1,26 @@
-.landing-img {
-  background-image: url('https://i.imgur.com/boJotd2.png');
+body {
+  background-image: url('https://i.imgur.com/BuREhBP.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center; 
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+.wrapper{
+  margin-top: 0px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.apex-landing {
+  height: 400px;
+  margin-top: 100px;
+}
+
+.link-login {
+  justify-content: center;
 }

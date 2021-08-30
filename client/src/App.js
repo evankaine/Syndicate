@@ -28,20 +28,20 @@ function App() {
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/legends');
   };
 
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/legends');
   };
   
   const handleLogout = () => {
     setCurrentUser(null);
     localStorage.removeItem('authToken');
     removeToken();
-    history.push('/login');
+    history.push('/');
   };
 
 
@@ -59,8 +59,12 @@ function App() {
             <Login handleLogin={handleLogin} />
           </Route>
 
-      {currentUser && (
           <Route path='/'>
+            <MainContainer />
+          </Route>
+
+      {currentUser && (
+          <Route path='/legends'>
             <MainContainer />
           </Route>
           )}

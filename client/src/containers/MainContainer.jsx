@@ -5,6 +5,7 @@ import { getAllLegends, getOneLegend } from '../services/legends';
 import Legends from '../screens/Legends';
 import LegendDetail from "../screens/LegendDetail"
 import TipCreate from "../screens/TipCreate"
+import Landing from '../layouts/Landing';
 
 export default function MainContainer(props) {
   const [legends, setLegends] = useState([]);
@@ -62,10 +63,13 @@ export default function MainContainer(props) {
           <LegendDetail tips={tips}/>
         </Route>
         
-        <Route path='/'>
+        <Route path='/legends'>
           <Legends legends={legends} />
         </Route>
 
+        <Route path='/'>
+          <Landing />
+        </Route>
       </Switch>
     </div>
   );

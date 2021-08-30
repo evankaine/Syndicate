@@ -7,15 +7,16 @@
 }
 
 .legend-image {
-  height: 350px;
+  height: 400px;
   display: block;
-  transition: all .2s ease-in;
+  transition: all .5s ease-in;
   transition: all .5s ease-out;
 }
 .legend-image:hover {
   transform: scale(1.1);
   opacity: .8;
   transition:opacity .6s;
+  transition: all .3s ease-in;
 }
 
 .overlay {
@@ -37,10 +38,20 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   
+  overflow: hidden;
+  background: linear-gradient(to right, #c7353b, #c7353b 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  
 }
 
 .legend-name:hover {
   opacity: 1;
+  background-position: 0 100%;
 }
 
 .legend-title {
@@ -82,7 +93,11 @@ hr {
   background-image: url('https://i.imgur.com/boJotd2.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vw 100vh;
+  background-position-x: center;
+  background-position-y: center; 
+  background-size: cover;
+  image-rendering: pixelated;
+
 }
 
 @keyframes floating {

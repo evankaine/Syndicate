@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom';
 import "./Legends.css"
+import Layout from '../layouts/Layout';
+
 
 export default function Legends(props) {
   const { legends, currentUser } = props;
   
   return (
+    
     <div className="background-legends">
       <h3 className="legend-title">LEGENDS</h3>
       <hr />
     <div className="legends-container">
-   
       {legends?.map((legend) => (
         <div className="legend" key={legend.id}>
           <Link to={`/legends/${legend.id}`}>
