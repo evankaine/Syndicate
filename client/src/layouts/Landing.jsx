@@ -14,7 +14,7 @@ export default function Landing() {
           </div>
             <h3 className="site-desc">LEGEND INFORMATION AND GAMEPLAY TIPS</h3>
             <Link className="link-login" to='/legends'>
-            <button className="raise" type="submit">
+            <button className="raise-landing" type="submit">
               Enter
             </button>
           </Link>

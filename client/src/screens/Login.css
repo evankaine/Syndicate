@@ -68,25 +68,49 @@ input {
   border-color: #c7353b;
 }
 
-.raise{
+.raise {
   font-family: "Agency FB"; 
   text-transform: uppercase;
   letter-spacing: 3px;
   color: white;
-  background-color: #c7353b;
   padding: 15px;
   width: 100%;
+  transition: all 0.5s;
+  position: relative;
   border: 1px solid transparent;
-  position: relative;	
   cursor: pointer;
   user-select: none;
 }
-
-.raise:hover,
-.raise:focus {
-box-shadow: 0 5px 10px black;
-transition: box-shadow 0.3s ease-in-out;
-transform: translateY(-0.5em);
+.raise::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.235);
+  transition: all 0.3s;
+}
+.raise:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.raise::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0;
+  background-color:#c7353abd;
+  transition: all 0.3s;
+  transform: scale(1.2,1.2);
+}
+.raise:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
 }
 
 .linkWrap {

@@ -13,12 +13,17 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.link-out {
+  align-items: center;
 }
 
 .apex-landing {
   height: 400px;
   margin-top: 100px;
+  margin-left: 25px;
 }
 
 .link-login {
@@ -31,4 +36,61 @@ body {
   letter-spacing: 2px;
   font-size: 35px;
   margin-bottom: 20px;
+}
+
+.raise-landing {
+  font-family: "Agency FB"; 
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+}
+.raise-landing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  background-color: rgba(0, 0, 0, 0.235);
+  transition: all 0.3s;
+}
+.raise-landing:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.raise-landing::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  background-color: #c7353b;
+  transition: all 0.3s;
+  transform: scale(1.2,1.2);
+}
+.raise-landing:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+@media (max-width: 400px) {
+  .apex-landing {
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 25px;
+  }
+  .raise-landing {
+    margin: auto;
+  }
 }
