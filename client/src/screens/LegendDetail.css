@@ -37,6 +37,7 @@
 .detail-name {
   font-size: 75px;
   letter-spacing: 1px;
+  margin-top: 25px;
   padding: 5px;
   display: block;
   line-height: 1.6;
@@ -57,27 +58,30 @@
   display: flex;
   flex-direction: row;
   color: white;
+  height: 200px;
   justify-content: center;
-  margin: 20px 50px 100px 50px;
+  margin: 20px 50px 20px 50px;
   padding: 10px 10px 10px 10px;
+  object-fit: cover;
+  text-align: center;
 }
 
 .passive {
-  height: 80px;
-  padding-right: 40px;
-  text-align: center;
+  height: 120px;
+  width: 120px;
   font-size: 20px;
 }
 .tactical {
-  height: 80px;
-  padding: 0px 40px 0px 40px;
-  text-align: center;
+  height: 120px;
+  width: 120px;
+  padding: 0px 100px 0px 100px;
+
   font-size: 20px;
 }
 .ultimate {
-  height: 80px;
-  padding-left: 40px;
-  text-align: center;
+  height: 120px;
+  width: 120px;
+
   font-size: 20px;
 }
 

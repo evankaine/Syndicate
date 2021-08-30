@@ -8,7 +8,7 @@ export default function Layout(props) {
       {currentUser ? (
         <div className="logged-in">
           <div className="logo-container">
-          <Link className="logo-link" to="/">
+          <Link className="logo-link" to="/legends">
             <h1 className="logo-in">THE SYNDICATE</h1>
           </Link>
           </div>
