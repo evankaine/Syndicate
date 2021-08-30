@@ -11,7 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-right: 50px;
+  overflow: hidden;
+  height: 100%;
+  font-family: "Agency FB"; 
 }
 
 .detail-image {
@@ -21,7 +23,7 @@
 }
 
 .image {
-  height: 400px;
+  height: 700px;
   
 }
 
@@ -29,15 +31,16 @@
 .detail {
   
   line-height: 1.6;
-  color: white;
+  
 }
 
 .detail-name {
-  font-size: 64px;
+  font-size: 75px;
   letter-spacing: 1px;
   padding: 5px;
   display: block;
   line-height: 1.6;
+  color: white;
 }
 
 .detail-lore {
@@ -45,13 +48,37 @@
   letter-spacing: .9px;
   display: block;
   line-height: 1.6;
-  width: 800px;
+  width: 700px;
+  font-size: 18px;
+  color: white;
 }
 
 .ability-images {
   display: flex;
   flex-direction: row;
-  line-height: 1.6;
+  color: white;
+  justify-content: center;
+  margin: 20px 50px 100px 50px;
+  padding: 10px 10px 10px 10px;
+}
+
+.passive {
+  height: 80px;
+  padding-right: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.tactical {
+  height: 80px;
+  padding: 0px 40px 0px 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.ultimate {
+  height: 80px;
+  padding-left: 40px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .tip-container {
@@ -64,7 +91,6 @@
 }
 
 .user-tip {
-  
 }
 
 .background-legends {
@@ -74,7 +100,7 @@
   background-position-x: center;
   background-position-y: center; 
   background-size: cover;
-  image-rendering: pixelated;
+  image-rendering: smooth;
 }
 
 

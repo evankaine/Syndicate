@@ -18,36 +18,36 @@ export default function TipCreate(props) {
       [name]: value,
     }));
   };
-console.log(formData)
+  console.log(formData)
   return (
-    <div className="background">
-      <div className="wrapper">
-        <div className="tip-form">
-          <div className="title">
-            <h3>CREATE TIP</h3>
-            <h4></h4>
-          </div>  
-          <form
-            onSubmit={(e) => {
-            e.preventDefault();
-            handleCreate(formData, id);
-          }}>
-      <div className="input-wrap">
-        <textarea
-          rows="5" cols="40"
-          type='text'
-          name="tip"
-          value={tip}
-          onChange={handleChange}>
-        </textarea>
-          {/* <Link to={`/legends/${legends.id}`}>       */}
-            <button className="raise" type="submit">Submit</button>
-          {/* </Link> */}
+    <div className = "background" >
+          <div className="wrapper">
+            <div className="tip-form">
+              <div className="title">
+                <h3>SHARE</h3>
+                <h4></h4>
+              </div>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleCreate(formData, id);
+                }}>
+                <div className="input-wrap">
+                  <textarea
+                    rows="5" cols="40"
+                    type='text'
+                    name="tip"
+                    value={tip}
+                    onChange={handleChange}>
+                  </textarea>
+                  {/* <Link to={`/legends/${legends.id}`}>       */}
+                  <button className="raise" type="submit">Submit</button>
+                  {/* </Link> */}
         
-      </div>
-          </form>
-        </div>
-      </div>
+                </div>
+              </form>
+            </div>
+          </div>
     </div>
   );
 }

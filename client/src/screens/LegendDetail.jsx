@@ -11,7 +11,7 @@ export default function LegendDetail(props) {
   const [tip, setTip] = useState(null);
   const [selectedLegend, setSelectedLegend] = useState('');
   const { id } = useParams();
-  const { tips, handleDelete } = props;
+  const { tips, handleDelete, currentUser } = props;
 
   useEffect(() => {
     const fetchLegendItem = async () => {
@@ -50,49 +50,56 @@ export default function LegendDetail(props) {
 
 
     <div className="ability-images">
-      <img
-        src={legend?.passive_image_url}
-        alt={legend?.passive_image_url}>
-      </img>
-      <h3>{legend?.passive_name}</h3>
+      <div className="passive">
+        <img
+          src={legend?.passive_image_url}
+          alt={legend?.passive_image_url}>
+        </img>
+        <hr />
+        <h3>{legend?.passive_name}</h3>
+      </div>
+            
+      <div className="tactical">
+        <img
+          src={legend?.tactical_image_url}
+          alt={legend?.tactical_image_url}>
+        </img>
+        <hr />
+        <h3>{legend?.tactical_name}</h3>
+      </div>
 
-      <img
-        src={legend?.tactical_image_url}
-        alt={legend?.tactical_image_url}>
-      </img>
-      <h3>{legend?.tactical_name}</h3>
-
-      <img
-        src={legend?.ultimate_image_url}
-        alt={legend?.ultimate_image_url}>
-      </img>
-      <h3>{legend?.ultimate_name}</h3>
+      <div className="ultimate">
+        <img
+          src={legend?.ultimate_image_url}
+          alt={legend?.ultimate_image_url}>
+        </img>
+        <hr />
+        <h3>{legend?.ultimate_name}</h3>
+      </div>
     </div>
-    </div>
-    </div>
-      
-
     
-
-    <div className="tip-container">
-      <div className="tip-section">
-        <Link to={`/legends/${legend?.id}/new`}>
-          <h2>create post</h2>
-        </Link>
-    </div>
-      <div className="tip-list">
-    {legend?.tips.map((content) => (
-      <div className="user-tip" key={content.id}>
-        <h3>{content.user.username}</h3>
-        <p>{content.tip}</p>
-        <Link to={`/legends/${legend?.id}/edit`}>
-          edit
-        </Link>
-        <button onClick={() => handleDelete(legend.id)}>Delete</button>
+          <div className="tip-container">
+            <div className="tip-section">
+              <Link to={`/legends/${legend?.id}/new`}>
+                <h2>create post</h2>
+              </Link>
+            </div>
+            <div className="tip-list">
+              {legend?.tips.map((content) => (
+                <div className="user-tip" key={content.id}>
+                  <h3>{content.user.username}</h3>
+                  <p>{content.tip}</p>
+                  <Link to={`/legends/${legend?.id}/tips/${content.id}/edit`}>
+                    edit
+                  </Link>
+                  <button onClick={() => handleDelete(content.id)}>Delete</button>
+                </div>
+              ))}
+            </div>
+          </div>
+      
+        </div>
       </div>
-    ))}
-      </div>
-    </div>
   </div>
   );
 }

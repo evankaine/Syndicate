@@ -5,7 +5,7 @@ body {
   background-position-x: center;
   background-position-y: center; 
   background-size: cover;
-  image-rendering: pixelated;
+  image-rendering: smooth;
 }
 
 .wrapper{
@@ -23,4 +23,12 @@ body {
 
 .link-login {
   justify-content: center;
+}
+
+.site-desc {
+  text-align: center;
+  font-family: "Agency FB"; 
+  letter-spacing: 2px;
+  font-size: 35px;
+  margin-bottom: 20px;
 }

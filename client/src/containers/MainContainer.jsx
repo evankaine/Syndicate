@@ -38,19 +38,19 @@ export default function MainContainer(props) {
     history.push('/legends/:id')
   };
 
-  const handleUpdate = async (id, formData) => {
+  const handleUpdate = async (id, formData, legend_id) => {
     const tipData = await putTip(id, formData);
     setTips((prevState) =>
       prevState.map((content) => {
         return content.id === Number(id) ? tipData : content;
       })
     );
-    history.push('/legends/:id');
+    history.push(`/legends/${legend_id}`);
   };
 
-  const handleDelete = async (id) => {
-    await deleteTip(id);
-    setTips((prevState) => prevState.filter((content) => content.id !== id));
+  const handleDelete = async (tipId) => {
+    await deleteTip(tipId);
+    setTips((prevState) => prevState.filter((content) => content.id !== tipId));
   };
 
   return (
@@ -61,7 +61,7 @@ export default function MainContainer(props) {
           <TipCreate currentUser={currentUser} legends={legends} handleCreate={handleCreate} />
         </Route>
 
-        <Route path='/legends/:id/edit'>
+        <Route path='/legends/:legend_id/tips/:id/edit'>
           <TipEdit currentUser={currentUser} tips={tips} handleUpdate={handleUpdate} />
         </Route>
 

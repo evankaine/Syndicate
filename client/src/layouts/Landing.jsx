@@ -12,9 +12,10 @@ export default function Landing() {
             src="https://i.imgur.com/U6u7aQX.png">
             </img>
           </div>
+            <h3 className="site-desc">LEGEND INFORMATION AND GAMEPLAY TIPS</h3>
             <Link className="link-login" to='/legends'>
-            <button>
-              Enter Site
+            <button className="raise" type="submit">
+              Enter
             </button>
           </Link>
       </div>

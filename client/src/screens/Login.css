@@ -84,7 +84,7 @@ input {
 
 .raise:hover,
 .raise:focus {
-box-shadow: 0 5px 10px rgb(135, 130, 130);
+box-shadow: 0 5px 10px black;
 transition: box-shadow 0.3s ease-in-out;
 transform: translateY(-0.5em);
 }
@@ -117,5 +117,5 @@ transform: translateY(-0.5em);
   background-position-x: center;
   background-position-y: center; 
   background-size: cover;
-  image-rendering: pixelated;
+  image-rendering: smooth;
 }

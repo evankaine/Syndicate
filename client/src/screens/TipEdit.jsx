@@ -7,7 +7,7 @@ export default function FoodEdit(props) {
   })
   const { tip } = formData;
   const { handleUpdate, tips, currentUser } = props;
-  const { id } = useParams()
+  const { id, legend_id } = useParams()
 
   useEffect(()=> {
     const prefillFormData = () => {
@@ -38,7 +38,7 @@ export default function FoodEdit(props) {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              handleUpdate(id, formData);
+              handleUpdate(id, formData, legend_id);
             }}>
       <div className="input-wrap">
         <textarea

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :tips
   resources :legends do 
-    resources :tips, only: :create
+  resources :tips, only: :create
   end
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
