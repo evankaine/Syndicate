@@ -66,7 +66,7 @@ export default function MainContainer(props) {
         </Route>
 
         <Route path='/legends/:id'>
-          <LegendDetail tips={tips}/>
+          <LegendDetail tips={tips} handleDelete={handleDelete} />
         </Route>
         
         <Route path='/legends'>

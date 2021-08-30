@@ -11,7 +11,7 @@ export default function LegendDetail(props) {
   const [tip, setTip] = useState(null);
   const [selectedLegend, setSelectedLegend] = useState('');
   const { id } = useParams();
-  const { tips } = props;
+  const { tips, handleDelete } = props;
 
   useEffect(() => {
     const fetchLegendItem = async () => {
@@ -88,6 +88,7 @@ export default function LegendDetail(props) {
         <Link to={`/legends/${legend?.id}/edit`}>
           edit
         </Link>
+        <button onClick={() => handleDelete(legend.id)}>Delete</button>
       </div>
     ))}
       </div>

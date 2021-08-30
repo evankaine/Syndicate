@@ -48,11 +48,8 @@ export default function FoodEdit(props) {
           value={tip}
           onChange={handleChange}>
         </textarea>
-          {/* <Link to={`/legends/${legends.id}`}>       */}
-            <button className="raise" type="submit">Submit</button>
-          {/* </Link> */}
-        
-      </div>
+              <button className="raise" type="submit">Submit</button>
+            </div>
           </form>
         </div>
       </div>
