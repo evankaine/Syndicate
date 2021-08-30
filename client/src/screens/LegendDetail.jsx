@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { getOneLegend } from '../services/legends';
 import { addTipToLegend } from '../services/tips';
 import { Link } from 'react-router-dom';
+import DeleteIcon from '@material-ui/icons/Delete';
+import EditIcon from '@material-ui/icons/Edit';
 import "./LegendDetail.css"
 
 
@@ -51,6 +53,7 @@ export default function LegendDetail(props) {
 
     <div className="ability-images">
       <div >
+        <h3>PASSIVE</h3>
         <img className="passive"
           src={legend?.passive_image_url}
           alt={legend?.passive_image_url}>
@@ -60,6 +63,7 @@ export default function LegendDetail(props) {
       </div>
             
       <div >
+        <h3>TACTICAL</h3>
         <img className="tactical"
           src={legend?.tactical_image_url}
           alt={legend?.tactical_image_url}>
@@ -69,6 +73,7 @@ export default function LegendDetail(props) {
       </div>
 
       <div >
+        <h3>ULTIMATE</h3>
         <img className="ultimate"
           src={legend?.ultimate_image_url}
           alt={legend?.ultimate_image_url}>
@@ -90,12 +95,19 @@ export default function LegendDetail(props) {
             <div className="tip-list">
               {legend?.tips.map((content) => (
                 <div className="user-tip" key={content.id}>
-                  <h3>{content.user.username}</h3>
-                  <p>{content.tip}</p>
-                  <Link to={`/legends/${legend?.id}/tips/${content.id}/edit`}>
-                    edit
-                  </Link>
-                  <button onClick={() => handleDelete(content.id)}>Delete</button>
+                  <h3 className="post-name">{content.user.username}</h3>
+                  <p className="post-content">{content.tip}</p>
+                  <hr />
+                  <div className="edit-delete">
+                    <Link className="edit-button" to={`/legends/${legend?.id}/tips/${content.id}/edit`}>
+                      <EditIcon />
+                    </Link>
+                    <button className="delete-button"
+                      onClick={() => handleDelete(content.id)}>
+                      <DeleteIcon />
+                    </button>
+                    
+                  </div>
                 </div>
               ))}
             </div>
