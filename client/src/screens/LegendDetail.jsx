@@ -77,11 +77,14 @@ export default function LegendDetail(props) {
         <h3>{legend?.ultimate_name}</h3>
       </div>
     </div>
-    
+    <hr />
           <div className="tip-container">
+            <h3 className="forum-title">FORUM</h3>
+            <p className="forum-legend">{legend?.name}</p>
+      <hr />
             <div className="tip-section">
               <Link to={`/legends/${legend?.id}/new`}>
-                <h2>create post</h2>
+                <h2>CREATE POST</h2>
               </Link>
             </div>
             <div className="tip-list">

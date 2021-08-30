@@ -31,11 +31,11 @@ export default function MainContainer(props) {
     fetchTips();
   }, []);
 
-  const handleCreate = async (formData, legendId) => {
-    const tipData = await postTip(formData, legendId);
+  const handleCreate = async (formData, legend_id) => {
+    const tipData = await postTip(formData, legend_id);
     setTips((prevState) => [...prevState, tipData]);
-    addTipToLegend(legendId, tipData.id)
-    history.push('/legends/:id')
+    addTipToLegend(legend_id, tipData.id)
+    history.push(`/legends/${legend_id}`)
   };
 
   const handleUpdate = async (id, formData, legend_id) => {
