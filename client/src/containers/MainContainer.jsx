@@ -5,6 +5,7 @@ import { getAllLegends, getOneLegend } from '../services/legends';
 import Legends from '../screens/Legends';
 import LegendDetail from "../screens/LegendDetail"
 import TipCreate from "../screens/TipCreate"
+import TipEdit from "../screens/TipEdit"
 import Landing from '../layouts/Landing';
 
 export default function MainContainer(props) {
@@ -34,6 +35,7 @@ export default function MainContainer(props) {
     const tipData = await postTip(formData, legendId);
     setTips((prevState) => [...prevState, tipData]);
     addTipToLegend(legendId, tipData.id)
+    history.push('/legends/:id')
   };
 
   const handleUpdate = async (id, formData) => {
@@ -43,7 +45,7 @@ export default function MainContainer(props) {
         return content.id === Number(id) ? tipData : content;
       })
     );
-    history.push('/legends/id');
+    history.push('/legends/:id');
   };
 
   const handleDelete = async (id) => {
@@ -57,6 +59,10 @@ export default function MainContainer(props) {
 
       <Route path='/legends/:id/new'>
           <TipCreate currentUser={currentUser} legends={legends} handleCreate={handleCreate} />
+        </Route>
+
+        <Route path='/legends/:id/edit'>
+          <TipEdit currentUser={currentUser} tips={tips} handleUpdate={handleUpdate} />
         </Route>
 
         <Route path='/legends/:id'>

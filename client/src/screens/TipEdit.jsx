@@ -1,37 +1,45 @@
-import { useState } from 'react';
-import { useParams } from "react-router-dom"
-import { Link } from 'react-router-dom';
-import "./TipCreate.css"
+import { useState, useEffect } from 'react'
+import {useParams} from 'react-router-dom';
 
-export default function TipCreate(props) {
+export default function FoodEdit(props) {
   const [formData, setFormData] = useState({
     tip: ''
-  });
+  })
   const { tip } = formData;
-  const { handleCreate, legends, currentUser } = props;
+  const { handleUpdate, tips, currentUser } = props;
   const { id } = useParams()
 
+  useEffect(()=> {
+    const prefillFormData = () => {
+      const tipItem = tips.find((content)=> content.id === Number(id));
+      setFormData({ tip: tipItem.tip })
+    }
+    if (tips.length) {
+      prefillFormData()
+    }
+  }, [tips, id])
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
+    const {name, value} = e.target;
+    setFormData(prevState => ({
       ...prevState,
-      [name]: value,
-    }));
-  };
-console.log(formData)
+      [name]: value
+    }))
+  }
+
   return (
     <div className="background">
       <div className="wrapper">
         <div className="tip-form">
           <div className="title">
-            <h3>CREATE TIP</h3>
+            <h3>EDIT</h3>
             <h4></h4>
           </div>  
           <form
             onSubmit={(e) => {
-            e.preventDefault();
-            handleCreate(formData, id);
-          }}>
+              e.preventDefault();
+              handleUpdate(id, formData);
+            }}>
       <div className="input-wrap">
         <textarea
           rows="5" cols="40"
@@ -49,5 +57,6 @@ console.log(formData)
         </div>
       </div>
     </div>
-  );
+  )
 }
+

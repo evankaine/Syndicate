@@ -1,0 +1,100 @@
+.wrapper{
+  margin-top: 0px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tip-form{
+  width: 352px;
+  height: 375px;
+  background: white;
+  padding: 35px 50px;
+  border-radius: 5px;
+  margin-top: 250px;
+  background-image: linear-gradient(rgba(1,1,1,0.8), black  );
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.tip-form .title {
+  text-align: center;
+  margin: 0px;
+  font-size: 50px;
+  font-family: "Agency FB"; 
+  letter-spacing: 2px;
+  color: #c7353b;
+}
+
+
+.tip-form, .input-wrap{
+  margin-bottom: 20px;
+  width: 302px;
+  position: relative;
+}
+
+textarea {
+  margin: 10px 0px 0px 0px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  background-color: white;
+  resize: none;
+}
+
+.tip-form .input-wrap:last-child{
+  margin-bottom: 0;
+}
+
+.tip-form .input-wrap input{
+  padding: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.tip-form .input-wrap input{
+  background: white;
+  padding-right: 35px;
+}
+
+.tip-form .input-wrap input:focus{
+  border-color: #c7353b;
+}
+
+.raise{
+  font-family: "Agency FB"; 
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  background-color: #c7353b;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid transparent;
+  position: relative;	
+  cursor: pointer;
+  user-select: none;
+}
+
+.raise:hover,
+.raise:focus {
+box-shadow: 0 5px 10px rgb(135, 130, 130);
+transition: box-shadow 0.3s ease-in-out;
+transform: translateY(-0.5em);
+}
+
+
+
+.background {
+  background-image: url('https://i.imgur.com/boJotd2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center; 
+  background-size: cover;
+  image-rendering: pixelated;
+}

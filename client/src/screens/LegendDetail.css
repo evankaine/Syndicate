@@ -1,0 +1,92 @@
+
+/* 
+.layyout-children {
+  flex: 2 1;
+  padding: 100px;
+} */
+
+
+
+.legend-detail {
+  flex: 2 1;
+  padding: 100px;
+  display: flex;
+  padding: 80px 100px 100px;
+  position: relative;
+}
+
+.legend-detail-image {
+  width: 500px;
+    padding: 0 40px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+.detail-name {
+  font-size: 64px;
+  letter-spacing: 1px;
+  padding: 5px;
+  display: block;
+  line-height: 1.6;
+}
+
+.detail-lore {
+  padding: 10px;
+  letter-spacing: .9px;
+  display: block;
+  line-height: 1.6;
+}
+
+.ability-images {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.6;
+}
+
+.tip-container {
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tip-list {
+  background: #FFFFFF;
+  padding-top: 8px;
+}
+
+.user-tip {
+  
+}
+
+.background-legends {
+  background-image: url('https://i.imgur.com/boJotd2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center; 
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+
+/* for tip-list */
+/* @media (min-width: 960px).tip-list {
+    width: 640px;
+} */
+
+/* for tip container */
+/* @media (min-width: 640px) .tip-container {
+  padding: 20px 24px;
+} */

@@ -97,7 +97,6 @@ hr {
   background-position-y: center; 
   background-size: cover;
   image-rendering: pixelated;
-
 }
 
 @keyframes floating {
