@@ -6,7 +6,6 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import "./LegendDetail.css"
 
-
 export default function LegendDetail(props) {
   const [legend, setLegend] = useState(null);
   const { id } = useParams();
@@ -19,7 +18,6 @@ export default function LegendDetail(props) {
     };
     fetchLegendItem();
   }, [id]);
-
 
   return (
     <div className="background-legends">
@@ -35,7 +33,6 @@ export default function LegendDetail(props) {
     <div className="detail">
       <h1 className="detail-name">{legend?.name}</h1>
       <p className="detail-lore">{legend?.lore}</p>
-
 
     <div className="ability-images">
       <div >
@@ -67,38 +64,39 @@ export default function LegendDetail(props) {
         <hr />
         <h3>{legend?.ultimate_name}</h3>
       </div>
-    </div>
+          </div>
+          
     <hr className="hr-media" />
-          <div className="tip-container">
-            <h3 className="forum-title">FORUM</h3>
-            <p className="forum-legend">{legend?.name}</p>
-      <hr />
-            <div className="tip-section">
-              <Link to={`/legends/${legend?.id}/new`}>
-                <h2>CREATE POST</h2>
-              </Link>
+      <div className="tip-container">
+        <h3 className="forum-title">FORUM</h3>
+        <p className="forum-legend">{legend?.name}</p>
+        <hr />
+      <div className="tip-section">
+        <Link to={`/legends/${legend?.id}/new`}>
+          <h2>CREATE POST</h2>
+        </Link>
             </div>
-            <div className="tip-list">
-              {legend?.tips.map((content) => (
-                <div className="user-tip" key={content.id}>
-                  <h3 className="post-name">{content.user.username}</h3>
-                  <p className="post-content">{content.tip}</p>
-                  <hr />
-                  <div className="edit-delete">
-                    <Link className="edit-button" to={`/legends/${legend?.id}/tips/${content.id}/edit`}>
-                      <EditIcon />
-                    </Link>
-                    <button className="delete-button"
-                      onClick={() => handleDelete(content.id)}>
-                      <DeleteIcon />
-                    </button>
-                    
+            
+      <div className="tip-list">
+        {legend?.tips.map((content) => (
+          <div className="user-tip" key={content.id}>
+            <h3 className="post-name">{content.user.username}</h3>
+            <p className="post-content">{content.tip}</p>
+            <hr />
+          <div className="edit-delete">
+            <Link className="edit-button" to={`/legends/${legend?.id}/tips/${content.id}/edit`}>
+              <EditIcon />
+            </Link>
+            <button className="delete-button"
+              onClick={() => handleDelete(content.id)}>
+              <DeleteIcon />
+              </button>
+              
                   </div>
                 </div>
               ))}
             </div>
           </div>
-      
         </div>
       </div>
   </div>
