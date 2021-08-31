@@ -11,14 +11,18 @@ export default function Legends(props) {
     <div className="legends-container">
       {legends?.map((legend) => (
         <div className="legend" key={legend.id}>
+          
           <Link to={`/legends/${legend.id}`}>
+
             <img className="legend-image"
               src={legend.legend_image_url}
               alt="apex legend">
             </img>
+
           <div className="overlay">
             <h2 className="legend-name">{legend.name}</h2>
           </div>
+            
           </Link>
         </div>
       ))}
