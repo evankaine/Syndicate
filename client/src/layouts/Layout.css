@@ -160,9 +160,7 @@ span {
   cursor:  pointer;
 }
 
-
 @media (max-width: 750px) {
-  
   .logged-out, .logged-in {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -180,7 +178,6 @@ span {
   .logo-container {
     grid-area: 1 / 1 / 2 / 2; 
   }
-
   .button-container, .account-container {
     grid-area: 1 / 2 / 2 / 3;;
   }
@@ -193,7 +190,6 @@ span {
   .login-button {
     padding: 2px 22px 5px 22px;
   }
-
   .username {
     font-size: 15px;
     margin: auto;
