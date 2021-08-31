@@ -37,7 +37,8 @@ export default function Login(props) {
           />
             
           <input
-            type='password'
+            autoComplete="on"
+            type="password"
             name='password'
             placeholder="Password"
             value={formData.password}

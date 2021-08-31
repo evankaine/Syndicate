@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneLegend } from '../services/legends';
-import { addTipToLegend } from '../services/tips';
 import { Link } from 'react-router-dom';
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
@@ -10,10 +9,8 @@ import "./LegendDetail.css"
 
 export default function LegendDetail(props) {
   const [legend, setLegend] = useState(null);
-  const [tip, setTip] = useState(null);
-  const [selectedLegend, setSelectedLegend] = useState('');
   const { id } = useParams();
-  const { tips, handleDelete, currentUser } = props;
+  const { handleDelete } = props;
 
   useEffect(() => {
     const fetchLegendItem = async () => {
@@ -23,17 +20,6 @@ export default function LegendDetail(props) {
     fetchLegendItem();
   }, [id]);
 
-  const handleChange = (e) => {
-    const { value } = e.target;
-    setSelectedLegend(value);
-  };
-
-  // handle submit for adding the tips to the legend
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const legendItem = await addTipToLegend(id, selectedLegend);
-    setLegend(legendItem);
-  };
 
   return (
     <div className="background-legends">

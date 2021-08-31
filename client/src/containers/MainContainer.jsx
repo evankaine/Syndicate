@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { deleteTip, getAllTips, putTip, postTip, addTipToLegend } from '../services/tips';
-import { getAllLegends, getOneLegend } from '../services/legends';
+import { getAllLegends } from '../services/legends';
 import Legends from '../screens/Legends';
 import LegendDetail from "../screens/LegendDetail"
 import TipCreate from "../screens/TipCreate"
@@ -21,7 +21,6 @@ export default function MainContainer(props) {
     };
     fetchLegends();
   }, []);
-  console.log(legends)
 
   useEffect(() => {
     const fetchTips = async () => {

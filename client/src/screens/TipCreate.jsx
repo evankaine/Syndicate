@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useParams } from "react-router-dom"
-import { Link } from 'react-router-dom';
 import "./TipCreate.css"
 
 export default function TipCreate(props) {
@@ -8,7 +7,7 @@ export default function TipCreate(props) {
     tip: ''
   });
   const { tip } = formData;
-  const { handleCreate, legends, currentUser } = props;
+  const { handleCreate } = props;
   const { id } = useParams()
 
   const handleChange = (e) => {
@@ -18,7 +17,7 @@ export default function TipCreate(props) {
       [name]: value,
     }));
   };
-  console.log(formData)
+
   return (
     <div className = "background" >
           <div className="wrapper">
@@ -39,10 +38,10 @@ export default function TipCreate(props) {
                     value={tip}
                     onChange={handleChange}>
                   </textarea>
-                  {/* <Link to={`/legends/${legends.id}`}>       */}
-                  <button className="raise-edit" type="submit">Submit</button>
-                  {/* </Link> */}
-        
+                <button className="raise-edit"
+                  type="submit">
+                  Submit
+                </button>
                 </div>
               </form>
             </div>

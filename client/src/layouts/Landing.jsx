@@ -9,7 +9,8 @@ export default function Landing() {
       <div className="landing-container">
         <div className="link-out">
           <img className="apex-landing"
-            src="https://i.imgur.com/U6u7aQX.png">
+              src="https://i.imgur.com/U6u7aQX.png"
+              alt="apex logo">
             </img>
           </div>
             <h3 className="site-desc">LEGEND INFORMATION AND GAMEPLAY TIPS</h3>

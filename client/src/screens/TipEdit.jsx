@@ -6,7 +6,7 @@ export default function FoodEdit(props) {
     tip: ''
   })
   const { tip } = formData;
-  const { handleUpdate, tips, currentUser } = props;
+  const { handleUpdate, tips } = props;
   const { id, legend_id } = useParams()
 
   useEffect(()=> {
@@ -33,7 +33,6 @@ export default function FoodEdit(props) {
         <div className="tip-form">
           <div className="title">
             <h3>EDIT</h3>
-            <h4></h4>
           </div>  
           <form
             onSubmit={(e) => {

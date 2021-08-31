@@ -33,7 +33,7 @@ export default function Register(props) {
         <input
           type='text'
           name='username'
-          placeHolder="Username"
+          placeholder="Username"
           value={formData.username}
             onChange={handleChange}
           />
@@ -41,15 +41,16 @@ export default function Register(props) {
         <input
           type='text'
           name='email'
-          placeHolder="Email"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
         />
       
         <input
+          autoComplete="on"
           type='password'
           name='password'
-          placeHolder="Password"
+          placeholder="Password"
           value={formData.password}
           onChange={handleChange}
         />
