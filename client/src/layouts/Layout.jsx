@@ -25,19 +25,18 @@ export default function Layout(props) {
             </Link>
           </div>
           <div className="button-container">
-              <Link to="/login">
-                <button className="login-button">
-                  LOGIN
-                </button>
-              </Link>
-              <Link to="/register">
-                <button className="register-button">
-                  REGISTER
-                </button>
-              </Link>
+            <Link to="/login">
+              <button className="login-button">
+                LOGIN
+              </button>
+            </Link>
+            <Link to="/register">
+              <button className="register-button">
+                REGISTER
+              </button>
+            </Link>
           </div>    
         </div>
-
       )}
     </div>
   );
