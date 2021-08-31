@@ -145,8 +145,8 @@ span {
   display:inline-block;
   border-radius:0.15em;
   box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-   text-align:center;
-   position:relative;
+  text-align:center;
+  position:relative;
   background-color: #c7353b;
 }
 
