@@ -36,8 +36,8 @@ export default function FoodEdit(props) {
           </div>  
           <form
             onSubmit={(e) => {
-              e.preventDefault();
-              handleUpdate(id, formData, legend_id);
+            e.preventDefault();
+            handleUpdate(id, formData, legend_id);
             }}>
       <div className="input-wrap">
         <textarea className="textarea"
@@ -47,7 +47,11 @@ export default function FoodEdit(props) {
           value={tip}
           onChange={handleChange}>
         </textarea>
-              <button className="raise" type="submit">Submit</button>
+        <button className="raise"
+          type="submit">
+          Submit
+        </button>
+              
             </div>
           </form>
         </div>

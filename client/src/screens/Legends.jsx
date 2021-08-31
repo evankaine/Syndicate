@@ -11,7 +11,7 @@ export default function Legends(props) {
     <div className="legends-container">
       {legends?.map((legend) => (
         <div className="legend" key={legend.id}>
-          
+      
           <Link to={`/legends/${legend.id}`}>
 
             <img className="legend-image"

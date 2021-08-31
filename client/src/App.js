@@ -43,7 +43,6 @@ function App() {
     history.push('/');
   };
 
-
     return (
       <div className="App">
         <Layout currentUser={currentUser} handleLogout={handleLogout}>
@@ -68,7 +67,6 @@ function App() {
           </Route>
           )}
           </Switch>
-          
       </div>
     );
 }
