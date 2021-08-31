@@ -1,5 +1,7 @@
 # The Syndicate
 
+https://612e58f9a7a17900076414b5--modest-sinoussi-becd5e.netlify.app/legends
+
 ## Overview
 
 The Syndicate is a full stack application that allows users to browse legend characters from the game Apex Legends. Authorized users have the ability to create, update and delete tips/tricks which are associated with a selected legend on the detail page. This app utilizies Ruby on Rails on the backend, and React on the frontend.
