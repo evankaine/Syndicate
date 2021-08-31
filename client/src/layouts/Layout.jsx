@@ -25,13 +25,13 @@ export default function Layout(props) {
             </Link>
           </div>
           <div className="button-container">
-              <Link className="login-button" to="/login">
-                <button>
+              <Link to="/login">
+                <button className="login-button">
                   LOGIN
                 </button>
               </Link>
-              <Link className="register-button" to="/register">
-                <button>
+              <Link to="/register">
+                <button className="register-button">
                   REGISTER
                 </button>
               </Link>
@@ -39,13 +39,6 @@ export default function Layout(props) {
         </div>
 
       )}
-      
-      {currentUser && (
-        <div>
-          
-        </div>
-      )}
-      {props.children}
     </div>
   );
 }

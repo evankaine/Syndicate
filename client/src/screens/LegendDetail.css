@@ -236,9 +236,9 @@ padding-left: 10px;
 
 
   .tip-list {
-    width: 300px;
-    margin-left: 300px;
-    margin-right: 300px;
+    width: 260px;
+    margin-left: 340px;
+    margin-right: 340px;
   }
   .tip-list::-webkit-scrollbar {
     width: 5px;

@@ -25,7 +25,6 @@ export default function TipCreate(props) {
             <div className="tip-form">
               <div className="title">
                 <h3>SHARE</h3>
-                <h4></h4>
               </div>
               <form
                 onSubmit={(e) => {
@@ -33,7 +32,7 @@ export default function TipCreate(props) {
                   handleCreate(formData, id);
                 }}>
                 <div className="input-wrap">
-                  <textarea
+                  <textarea className="textarea"
                     rows="5" cols="40"
                     type='text'
                     name="tip"

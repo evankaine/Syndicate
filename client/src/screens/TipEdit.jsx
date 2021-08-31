@@ -41,7 +41,7 @@ export default function FoodEdit(props) {
               handleUpdate(id, formData, legend_id);
             }}>
       <div className="input-wrap">
-        <textarea
+        <textarea className="textarea"
           rows="5" cols="40"
           type='text'
           name="tip"
