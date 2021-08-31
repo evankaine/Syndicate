@@ -143,3 +143,15 @@ input {
   background-size: cover;
   image-rendering: smooth;
 }
+
+@media (max-width: 750px) {
+  .form{
+    width: 250px;
+    margin-top: 200px;
+  }
+  
+  .form .input-wrap input{
+    width: 65%;
+    
+  }
+}

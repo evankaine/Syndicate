@@ -130,7 +130,7 @@
   hyphens: manual;
   min-width: 550px;
   max-width: 550px;
-  max-height: 500px;
+  max-height: 1000px;
   margin-top: 15px;
   background-color: white;
   box-shadow: 0 0 10px black;
@@ -210,7 +210,7 @@ padding-left: 10px;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #c7353b));
 }
 
-@media (max-width: 400px) {
+@media (max-width: 750px) {
   .legend-detail {
   flex-wrap: wrap;
   justify-content: center;
@@ -221,10 +221,7 @@ padding-left: 10px;
   padding: 0px 25px 150px 25px;
   }
   .detail-name {
-    margin: 0px 235px 0px 235px;
-  }
-  .detail-lore {
-    
+    margin: 0px 340px 0px 340px;
   }
   .ability-images {
     flex-direction: column;
@@ -238,5 +235,19 @@ padding-left: 10px;
   }
 
 
+  .tip-list {
+    width: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .tip-list::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .user-tip {
+    min-width: 250px;
+    max-width: 550px;
+    max-height: 1000px;
+  }
 
 }

@@ -41,7 +41,7 @@ export default function TipCreate(props) {
                     onChange={handleChange}>
                   </textarea>
                   {/* <Link to={`/legends/${legends.id}`}>       */}
-                  <button className="raise" type="submit">Submit</button>
+                  <button className="raise-edit" type="submit">Submit</button>
                   {/* </Link> */}
         
                 </div>

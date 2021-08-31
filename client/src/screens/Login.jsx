@@ -28,7 +28,7 @@ export default function Login(props) {
         e.preventDefault();
         handleLogin(formData);}}>
         <div className="input-wrap">
-          <input
+          <input 
             type='text'
             name='username'
             placeholder="Username"
