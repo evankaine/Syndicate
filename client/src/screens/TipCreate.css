@@ -110,7 +110,6 @@
   color: white;
 }
 
-
 .background {
   background-image: url('https://i.imgur.com/boJotd2.png');
   background-repeat: no-repeat;
@@ -131,7 +130,6 @@
     width: 253px;
     position: relative;
   }
-  
   .textarea {
     margin: 10px 0px 0px 0px;
     width: 250px;
