@@ -2,7 +2,6 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Layout from './layouts/Layout';
-
 import MainContainer from './containers/MainContainer';
 import Login from './screens/Login';
 import Register from './screens/Register';
@@ -28,13 +27,13 @@ function App() {
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/legends');
   };
 
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/legends');
   };
   
   const handleLogout = () => {
@@ -58,13 +57,18 @@ function App() {
           <Route path='/login'>
             <Login handleLogin={handleLogin} />
           </Route>
-      {currentUser && (
+
           <Route path='/'>
+            <MainContainer />
+          </Route>
+
+      {currentUser && (
+          <Route path='/legends'>
             <MainContainer />
           </Route>
           )}
           </Switch>
-        
+          
       </div>
     );
 }

@@ -87,54 +87,56 @@ The Syndicate is a full stack application that allows users to browse legend cha
 ``` structure
 
 src
-|__ Layout/
-      |__ Nav/
-            |__Nav.jsx
-      |__ Footer/
-            |__ Footer.jsx
-      |__ SignUp/
-            |__ SignUp.jsx
-      |__ SignIn/
-            |__ SingIn.jsx
-|__ components/
-      |__ Home/
-            |__ Home.jsx
-      |__ Legends/
-            |__ Legends.jsx
-            |__ LegendDetail.jsx
-      |__ Tips/
-            |__ Tips.jsx
-            |__ CreateTip.jsx
-            |__ EditTip.jsx
-            |__ DeleteTip.jsx
+|__ containers/
+      |__ MainContainer.jsx
+|__ layouts/
+      |__ Landing.css
+      |__ Landing.jsx
+      |__ Layout.css
+      |__ Layout.jsx
+|__ screens/
+      |__ LegendDetail.css
+      |__ LegendDetail.jsx
+      |__ Legends.css
+      |__ Legends.jsx
+      |__ Login.css
+      |__ Login.jsx
+      |__ Register.css
+      |__ Register.jsx
+      |__ TipCreate.css
+      |__ TipCreate.jsx
+      |__ TipEdit.jsx
 |__ services/
-
+      |__ api-config.js
+      |__ auth.js
+      |__ Legends.js
+      |__ tips.js
 ```
 
 #### Time Estimates
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic BE Models     |    H     |     3 hrs      |               |     TBD     |
-| BE CRUD Actions     |    H     |     2 hrs      |               |     TBD     |
-| BE Auth             |    L     |     2 hrs      |               |     TBD     |
-| Seed Data           |    H     |     2 hrs      |               |     TBD     |
-| FE Components       |    H     |     3 hrs      |               |     TBD     |
-| FE Crud             |    H     |     3 hrs      |               |     TBD     |
-| FE Routing          |    H     |     3 hrs      |               |     TBD     |
-| FE State            |    H     |     3 hrs      |               |     TBD     |
-| Home Page Layout    |    H     |     2 hrs      |               |     TBD     |
-| Detail Page Layout  |    H     |     2 hrs      |               |     TBD     |
-| Edit Page Layout    |    H     |     2 hrs      |               |     TBD     |
-| Create Page Layout  |    H     |     3 hrs      |               |     TBD     |
-| Sign In / Sign Up   |    H     |     3 hrs      |               |     TBD     |
-| Basic Css           |    H     |     3 hrs      |               |     TBD     |
-| Advanced Navbar CSS |    L     |     2 hrs      |               |     TBD     |
-| Advanced Home CSS   |    L     |     2 hrs      |               |     TBD     |
-| Advanced Detail CSS |    L     |     2 hrs      |               |     TBD     |
-| Advanced Edit CSS   |    L     |     2 hrs      |               |     TBD     |
-| Advanced Create CSS |    L     |     2 hrs      |               |     TBD     |
-| TOTAL               |          |     46hrs      |               |     TBD     |
+| Basic BE Models     |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| BE CRUD Actions     |    H     |     2 hrs      |     1 hrs     |     TBD     |
+| BE Auth             |    L     |     2 hrs      |     2 hrs     |     TBD     |
+| Seed Data           |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| FE Components       |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| FE Crud             |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| FE Routing          |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| FE State            |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Home Page Layout    |    H     |     2 hrs      |     1 hrs     |     TBD     |
+| Detail Page Layout  |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| Edit Page Layout    |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| Create Page Layout  |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Sign In / Sign Up   |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Basic Css           |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Advanced Navbar CSS |    L     |     2 hrs      |     2 hrs     |     TBD     |
+| Advanced Home CSS   |    L     |     2 hrs      |     2 hrs     |     TBD     |
+| Advanced Detail CSS |    L     |     2 hrs      |     2 hrs     |     TBD     |
+| Advanced Edit CSS   |    L     |     2 hrs      |     2 hrs     |     TBD     |
+| Advanced Create CSS |    L     |     2 hrs      |     2 hrs     |     TBD     |
+| TOTAL               |          |     46hrs      |     40 hrs    |     TBD     |
 
 
 <br>
@@ -151,13 +153,61 @@ src
 
 ## Post-MVP
 
+- Add images for content
+- Add new tables for weapons and consumbles. Have an armory route on site displaying content
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+```
+.legend-image {
+  height: 400px;
+  display: block;
+  transition: all .5s ease-in;
+  transition: all .5s ease-out;
+}
+.legend-image:hover {
+  transform: scale(1.1);
+  opacity: .8;
+  transition:opacity .6s;
+  transition: all .3s ease-in;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.legend-name {
+  font-family: "Agency FB"; 
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  overflow: hidden;
+  background: linear-gradient(to right, #c7353b, #c7353b 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.legend-name:hover {
+  opacity: 1;
+  background-position: 0 100%;
+}
+```
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+encountered 404 issues when trying to post, edit and delete. these issues were caused by discrepancies in my props names causing values to be undefined.

@@ -1,0 +1,253 @@
+
+
+.legend-detail {
+  padding: 80px 25px 25px 50px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  height: 100%;
+  font-family: "Agency FB"; 
+}
+
+.detail-image {
+  display: block;
+  padding: 0 20px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.image {
+  height: 700px;
+  
+}
+
+
+.detail {
+  line-height: 1.6;
+}
+
+.detail-name {
+  font-size: 75px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  padding: 5px;
+  display: block;
+  line-height: 1.6;
+  color: white;
+}
+
+.detail-lore {
+  padding: 10px 0px 10px 0px;
+  letter-spacing: .9px;
+  display: block;
+  line-height: 1.6;
+  width: 700px;
+  font-size: 18px;
+  color: white;
+}
+
+.ability-images {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 200px;
+  justify-content: center;
+  margin: 0px 20px 80px 20px;
+  padding: 0px 10px 10px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.passive {
+  height: 120px;
+  width: 120px;
+}
+.tactical {
+  height: 120px;
+  width: 120px;
+  padding: 0px 100px 0px 100px;
+}
+.ultimate {
+  height: 120px;
+  width: 120px;
+}
+
+.tip-section {
+  text-align: center;
+  margin: 10px;
+  font-family: "Agency FB"; 
+  color: white;
+  font-size: 30px;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #c7353b, #c7353b 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 1000ms ease;
+}
+
+.tip-section:hover {
+  background-position: 0 100%;
+}
+
+.tip-list {
+  height: 600px;
+  padding-top: 8px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(transparent, black  );
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+}
+
+.tip-list::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.tip-list::-webkit-scrollbar-track {
+  background-image: linear-gradient(black, rgb(60, 57, 57), black  );
+}
+ 
+.tip-list::-webkit-scrollbar-thumb {
+  background-color: #c7353b;
+}
+
+.user-tip {
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  hyphens: manual;
+  min-width: 550px;
+  max-width: 550px;
+  max-height: 1000px;
+  margin-top: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+}
+
+.forum-title {
+  color: white;
+  text-align: center;
+  font-family: "Agency FB"; 
+  font-size: 60px;
+  color:  #c7353b;
+}
+
+.forum-legend {
+  color: white;
+  text-align: center;
+  font-family: "Agency FB"; 
+  font-size: 30px;
+  color:  white;
+}
+
+.post-name {
+color: black;
+font-size: 30px;
+padding-left: 10px;
+}
+
+.post-content {
+  padding: 0px 50px 10px 50px;
+}
+
+.edit-delete {
+  text-align: right;
+  margin: 5px;
+}
+
+.edit-button {
+  color: black;
+  transform: scale(1.0);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.edit-button:hover {
+  transform: scale(1.2);
+  opacity: .6;
+}
+
+.delete-button {
+  color: blackb;
+  transform: scale(1.0);
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  transform: scale(1.2);
+  opacity: .6;
+}
+
+.background-legends {
+  background-image: url('https://i.imgur.com/boJotd2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center; 
+  background-size: cover;
+  image-rendering: smooth;
+}
+
+.hr-media {
+  border: 0;
+  display:block; 
+  width: 75%;          
+  height: 2px;
+  margin: auto;  
+  margin-top: 10px;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #c7353b));
+}
+
+@media (max-width: 750px) {
+  .legend-detail {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin: 0px 50px 0px 50px;
+  padding: 0px 25px 150px 25px;
+  }
+  .detail-name {
+    margin: 0px 360px 0px 360px;
+  }
+  .ability-images {
+    flex-direction: column;
+    margin: 200px 20px 80px 20px;
+  }
+  .hr-media {
+    margin-top: 275px;
+  }
+  .h3-media {
+    margin-top: 20px;
+  }
+
+
+  .tip-list {
+    width: 260px;
+    margin-left: 340px;
+    margin-right: 340px;
+  }
+  .tip-list::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .user-tip {
+    min-width: 250px;
+    max-width: 550px;
+    max-height: 1000px;
+  }
+
+}

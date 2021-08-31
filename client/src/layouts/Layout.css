@@ -1,71 +1,203 @@
 .layout-container {
-color: white;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-text-align: center;
+  background-color: transparent;
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  width: 100%;
+  color: white;
 }
+
+/* FOR LOGGED OUT */
 
 .logged-out {
-  grid-area: 1 / 2 / 2 / 3;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Agency FB";  
   letter-spacing: 2px;
-  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: linear-gradient(rgba(1,1,1,0.8), black  );
+  -webkit-box-shadow: 0 2px 12px 6px black;
+  -moz-box-shadow: 0 2px 12px 6px black;
+  box-shadow: 0 2px 12px 6px black;
+  backdrop-filter: blur(4px);
+  height: 75px;
 }
 
-.apex-logo {
-  height: 400px;
-
+.logo-container {
+  text-align: left;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .logo-out {
-  margin: 0;
+  font-size: 40px;
+  padding: 13px 5px 5px 10px;
+  margin: auto;
+  color: white;
 }
 
-.desc-out {
-  color: #A29FA4;
-  margin: 0;
+/* .logo-link used and stays same */
+/* .logo-link:hover used and stays same */
+
+.button-container {
+  grid-area: 1 / 3 / 2 / 4;
+  text-align: right;
+}
+
+.login-button, .register-button {
+  font-family: "Agency FB"; 
+  font-size: 12px;
+  margin: 20px 15px 10px 10px; 
+  padding: 10px 14px 10px 14px;
+  color: white;
+  display:inline-block;
+  border-radius:0.15em;
+  text-align:center;
+  position:relative;
+  background-color: #c7353b;
+}
+
+.login-button {
+  padding: 10px 22px 10px 22px;
+  margin: 0px 5px 0px 0px; 
+}
+
+.login-button:before {
+  padding: 3px 22px 5px 22px;
+}
+
+.login-button:hover, .register-button:hover {
+  color: #c7353b;
+  background:white;
+  cursor:  pointer;
+}
+
+
+/* FOR LOGGED IN */
+
+.logged-in {
+  font-family: "Agency FB";  
+  letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: linear-gradient(rgba(1,1,1,0.8), black  );
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  backdrop-filter: blur(4px);
+  height: 75px;
+}
+
+.logo-container {
+  text-align: left;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.logo-in {
+  font-size: 40px;
+  padding: 13px 5px 5px 10px;
+  margin: auto;
+  color: white;
+}
+
+.logo-link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #c7353b, #c7353b 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.logo-link:hover {
+  background-position: 0 100%;
+}
+
+.account-container {
+  grid-area: 1 / 3 / 2 / 4;
+  text-align: right;
+}
+
+.username {
   font-size: 15px;
-  padding-top: 8px;
+  margin: auto;
+  padding: 15px 15px 5px 5px;
+}
+span {
+  color: #c7353b;
 }
 
-.link-out {
-  padding-top: 20px;
+.logout-button {
+  font-family: "Agency FB"; 
+  font-size: 12px;
+  margin-right: 15px; 
+  padding: 3px 22px 5px 22px;
+  color: white;
+  display:inline-block;
+  border-radius:0.15em;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+   text-align:center;
+   position:relative;
+  background-color: #c7353b;
 }
 
-.link-login:link {
-  color: white;
-  text-decoration: none;
-  padding-right: 10px;
-}
-.link-login:visited {
-  color: white;
-  text-decoration: none;
-}
-.link-login:hover {
-  color: #b8323b;
-}
-.link-login:active {
-  color: white;
+.logout-button:active {
+  top: 0.8em;
 }
 
-.link-register:link {
-  color: white;
-  text-decoration: none;
-  padding-left: 10px;
-}
-.link-register:visited {
-  color: white;
-  text-decoration: none;
-}
-.link-register:hover {
-  color: #b8323b;
-}
-.link-register:active {
-  color: white;
+.logout-button:hover {
+  color: #c7353b;
+  background:white;
+  cursor:  pointer;
 }
 
+
+@media (max-width: 750px) {
+  
+  .logged-out, .logged-in {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 55px;
+  }
+  .logo-out, .logo-in {
+    font-size: 20px;
+    padding: 15px 5px 5px 10px;
+    margin: auto;
+    color: white;
+  }
+  .logo-container {
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+
+  .button-container, .account-container {
+    grid-area: 1 / 2 / 2 / 3;;
+  }
+  .login-button, .register-button {
+    font-family: "Agency FB"; 
+    font-size: 12px;
+    margin: 15px 5px 0px 0px; 
+    padding: 2px 10px 5px 10px;
+  }
+  .login-button {
+    padding: 2px 22px 5px 22px;
+  }
+
+  .username {
+    font-size: 15px;
+    margin: auto;
+    padding: 5px 5px 5px 5px;
+  }
+}

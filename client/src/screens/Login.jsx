@@ -18,6 +18,7 @@ export default function Login(props) {
   };
 
   return (
+    <div className="background">
     <div className="wrapper">
       <div className="form">
         <div className="title">
@@ -27,7 +28,7 @@ export default function Login(props) {
         e.preventDefault();
         handleLogin(formData);}}>
         <div className="input-wrap">
-          <input
+          <input 
             type='text'
             name='username'
             placeholder="Username"
@@ -36,7 +37,8 @@ export default function Login(props) {
           />
             
           <input
-            type='password'
+            autoComplete="on"
+            type="password"
             name='password'
             placeholder="Password"
             value={formData.password}
@@ -44,17 +46,17 @@ export default function Login(props) {
           />
         </div>
           
-          <button className="raise" type="submit">Login</button>
+          <button className="raise" type="submit">submit</button>
         </form>
         <p className="linkWrap">
-          Don't have an account? Join the Syndicate 
+          Don't have an account? 
           <Link to="/register"
             className="signUpLink">
-            Here
+            Join The Syndicate
           </Link>
         </p>
-        
       </div>
+    </div>
     </div>
   );
 }

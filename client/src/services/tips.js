@@ -15,12 +15,12 @@ export const postTip = async (tipData, legendId) => {
   return resp.data;
 };
 
-export const putTip = async (tipData, legendId, tipId) => {
-  const resp = await api.put(`/legends/${legendId}/tips/${tipId}`, { tip: tipData });
+export const putTip = async (tipId, tipData) => {
+  const resp = await api.put(`/tips/${tipId}`, { tip: tipData });
   return resp.data;
 };
 
-export const deleteTip = async (legendId, tipId) => {
-  const resp = await api.delete(`/legends/${legendId}/tips/${tipId}`);
+export const deleteTip = async (tipId) => {
+  const resp = await api.delete(`/tips/${tipId}`);
   return resp;
 };
